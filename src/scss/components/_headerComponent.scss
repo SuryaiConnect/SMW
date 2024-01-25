@@ -1,0 +1,95 @@
+.header{
+    background-color: $primary-color-1;
+    display: flex;
+    // width: 1336px;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-self: stretch;
+        .button__translate {
+            margin-right: 12px;
+        }
+    }
+    .mainNav{
+        padding: 6.1px 0px;
+        .list-group{
+            gap: 40px;
+        }
+        &__item{
+            &-link{
+                color: $white-color-1;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .p__small{
+                    text-transform: uppercase;
+                }
+                .smw-icon-right-angle, .smw-icon-search{
+                    &::before{
+                        color: $white-color-1;
+                    }
+                }
+                .smw-icon-search{
+                    &::before{
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+        &__subMenu{
+            &-link{
+                border: 1px solid red;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Sub Menu Navigation */
+.headerWrapper{
+    background-color: $primary-color-1;
+    .header{
+        &__top{
+            .mw-386-6{
+                max-width: 386.6px;
+            }
+            .mainNav{
+                &__subMenu{
+                    padding: 5.6rem 0px;
+                    &.mw-396{
+                        max-width: 396px;
+                    }
+                    
+                    &-item{
+                        padding: 14px 0px;
+                        border-bottom: 1px solid $primary-color-4;
+                    }
+                    &-link{
+                        color: $white-color-1;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        width: 100%;
+                        transition: all 0.3s ease-out;
+                        line-height: 1.6;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        &__bottom{
+            padding: 24px 0px;
+            background-color: $secondary-color-1;
+            &-left{
+                max-width: 552px;
+            }
+        }
+    }
+}
