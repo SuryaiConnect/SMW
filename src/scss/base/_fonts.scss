@@ -58,6 +58,7 @@ $smw-font-icons: 'smwicons';
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .smw-icon-arrow-right-circle:before {
   content: "\e900";
   color: $primary-color-1;
@@ -88,7 +89,7 @@ $smw-font-icons: 'smwicons';
 }
 .smw-icon-close-blue-hover:before {
   content: "\e907";
-  color: $secondary-color-3;
+  color: $secondary-color-3
 }
 .smw-icon-default:before {
   content: "\e908";
@@ -102,63 +103,71 @@ $smw-font-icons: 'smwicons';
   content: "\e90a";
   color: $white-color-1;
 }
-.smw-icon-down-angle:before {
+.smw-icon-dot:before {
   content: "\e90b";
-  color: $primary-color-1;
+  color: $secondary-color-1;
 }
-.smw-icon-down-arrow:before {
+.smw-icon-down-angle:before {
   content: "\e90c";
   color: $primary-color-1;
 }
-.smw-icon-email:before {
+.smw-icon-down-arrow:before {
   content: "\e90d";
   color: $primary-color-1;
 }
-.smw-icon-info-circle:before {
+.smw-icon-email:before {
   content: "\e90e";
   color: $primary-color-1;
 }
-.smw-icon-linkedln:before {
+.smw-icon-home:before {
   content: "\e90f";
   color: $white-color-1;
 }
-.smw-icon-linkedln-blue:before {
+.smw-icon-info-circle:before {
   content: "\e910";
+  color: $primary-color-1;
+}
+.smw-icon-linkedln:before {
+  content: "\e911";
+  color: $white-color-1;
+}
+.smw-icon-linkedln-blue:before {
+  content: "\e912";
   color: $secondary-color-1;
 }
 .smw-icon-linkedln-blue-hover:before {
-  content: "\e911";
-  color: $secondary-color-3;
+  content: "\e913";
+  color: $secondary-color-3
 }
 .smw-icon-linkedln-hover:before {
-  content: "\e912";
+  content: "\e914";
   color: $white-color-1;
 }
 .smw-icon-phone:before {
-  content: "\e913";
-  color: $primary-color-1;
-}
-.smw-icon-right-angle:before {
-  content: "\e914";
-  color: $primary-color-1;
-}
-.smw-icon-right-arrow:before {
   content: "\e915";
   color: $primary-color-1;
 }
-.smw-icon-search:before {
+.smw-icon-right-angle:before {
   content: "\e916";
   color: $primary-color-1;
 }
-.smw-icon-translate:before {
+.smw-icon-right-arrow:before {
   content: "\e917";
+  color: $primary-color-1;
+}
+.smw-icon-search:before {
+  content: "\e918";
+  color: $primary-color-1;
+}
+.smw-icon-translate:before {
+  content: "\e919";
   color: $white-color-1;
 }
 .smw-icon-twitter:before {
-  content: "\e918";
+  content: "\e91a";
   color: $white-color-1;
 }
 .smw-icon-twitter-hover:before {
-  content: "\e919";
+  content: "\e91b";
   color: $white-color-1;
 }

@@ -333,19 +333,91 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="my-5">Bread Crumb</h2>
+                <h2 class="my-5">Breadcrumb</h2>
             </div>
-            <div class="col-sm-12">                
-                <nav class="smw-breadcrumb" aria-label="breadcrumb">
-                    <ol class="smw-breadcrumb">
-                        <li class="smw-breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="smw-breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="smw-breadcrumb-item">Data</li>
+            <div class="col-sm-12 py-5">                
+                <nav class="smw-breadcrumb px-5" aria-label="breadcrumb">
+                    <ol class="d-flex gap-8 align-items-center">
+                        <li class="smw-breadcrumb-item">
+                            <a href="#" class="smw-breadcrumb-link"><span class="smw-icon-home"></span></a>
+                        </li>
+                        <li class="smw-breadcrumb-item">
+                            <a href="#" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">About Us</span></a>
+                        </li>
+                        <li class="smw-breadcrumb-item">
+                            <p href="#" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">About Us</span></p>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-12 py-5">                
+                <nav class="smw-breadcrumb primary px-5" aria-label="breadcrumb">
+                    <ol class="d-flex gap-8 align-items-center">
+                        <li class="smw-breadcrumb-item">
+                            <a href="#" class="smw-breadcrumb-link"><span class="smw-icon-home"></span></a>
+                        </li>
+                        <li class="smw-breadcrumb-item">
+                            <a href="#" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">About Us</span></a>
+                        </li>
+                        <li class="smw-breadcrumb-item">
+                            <p href="#" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">About Us</span></p>
+                        </li>
                     </ol>
                 </nav>
             </div>
         </div><!-- row -->
-    </div><!-- Container -->
+    </div><!-- Container -- Breadcrumb Component -- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="my-5">Image Component</h2>
+            </div>
+            <div class="col-sm-4">
+                <img src="./images/dummy-img.jpg" class="smw-img-border-radius img-fluid" alt="Image" />
+            </div>
+        </div>
+    </div><!-- Container -- Image Component -- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="my-5">Search Form</h2>
+            </div>
+            <div class="col-sm-12 bg-primary py-3">
+                <div class="smw-searchbar">
+                    <div class="d-flex">
+                        <input type="text" class="smw-searchbar-field form-control" placeholder="Enter Search" aria-label="Enter Search" aria-describedby="button-addon2">
+                        <button class="button__blue smw-searchbar-btn d-flex gap-8 align-items-center"><span>Search</span><span class="smw-icon-right-arrow"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -- Search Component -- -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="my-5">Thank You Success</h2>
+            </div>
+            <div class="col-sm-12 bg-primary p-4">
+                <div class="smw-thankyou-success smw-p-32 text-center">
+                    <h2 class="smw-thankyou-success-title">Thank You</h2>
+                    <p class="smw-my-32">A member of our team will contact you shortly.</p>
+                    <button class="button__blue smart-animation">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- container -- Thank You Component -- -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="my-5">Request Call</h2>
+            </div>
+            <div class="col-sm-12">
+                
+            </div>
+        </div>
+    </div> <!-- container -- Request Call Component -- -->
     <script src="./vendors/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
