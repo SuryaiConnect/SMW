@@ -4,6 +4,9 @@
     // width: 1336px;
     justify-content: space-between;
     align-items: flex-start;
+    &.with-transperent{
+        background-color: transparent;
+    }
     &__right{
         display: flex;
         flex-direction: column;
@@ -28,8 +31,24 @@
                 gap: 8px;
                 .p__small{
                     text-transform: uppercase;
+                    font-weight: 700;
                 }
-                .smw-icon-right-angle, .smw-icon-search{
+                .smw-icon-search{
+                    &::before{
+                        color: $secondary-color-1;
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        &::before{
+                            border: 1px solid $secondary-color-1;
+                            
+                        }
+
+                    }
+                }
+                .smw-icon-right-angle{
                     &::before{
                         color: $white-color-1;
                     }
@@ -79,6 +98,9 @@
                         line-height: 1.6;
                         &:hover{
                             text-decoration: underline;
+                        }
+                        .p__small{
+                            font-weight: 700;
                         }
                     }
                 }
