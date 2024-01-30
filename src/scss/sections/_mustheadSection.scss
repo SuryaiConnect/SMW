@@ -14,8 +14,8 @@
         z-index: 1; 
     }
     .header{
-        position: relative;
-        z-index: 2;
+        // position: relative;
+        // z-index: 2;
         .active{
             .smw-icon-right-angle{
                     transform: rotate(90deg);
@@ -25,16 +25,26 @@
     .headerWrapper{
         position: absolute;
         z-index: 3;
-        left: 0px;
-        top: 140px;
         width: 100%;
-        .header__bottom, .header__top .row{
-            display: none;
-        }        
+        // right: -991px;
+        @include media-breakpoint-up(lg) { 
+            left: 0px;
+            top: 140px;
+        }
+        @include media-breakpoint-down(lg) { 
+            top: 0px;
+            right: -991px;
+        }
+        // .header__bottom, .header__top .row{
+        //     display: none;
+        // }        
         &.open{
-            .header__bottom, .row.open{
-                display: flex;
+            right: 0px; 
+            @include media-breakpoint-down(lg) { 
             }
+            // .header__bottom, .row.open{
+            //     display: flex;
+            // }
         }
     }
     &__article{
