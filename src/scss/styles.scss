@@ -4,6 +4,9 @@ Description: SMW
 Version: 1.0
 */
 
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap'; 
+
 // Utilities
 @import 'utilities/variables';
 @import 'utilities/utilities';
@@ -30,4 +33,8 @@ Version: 1.0
 @import 'components/imageComponent';
 @import 'components/searchbarComponent';
 @import 'components/thankYouSuccessComponent';
+
+
+// Sections
+@import 'sections/mustheadSection';
 

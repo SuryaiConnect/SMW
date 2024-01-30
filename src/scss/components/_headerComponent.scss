@@ -4,32 +4,134 @@
     // width: 1336px;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+    z-index: 3;
+    &.slide-open{
+        @include media-breakpoint-down(lg) { 
+            right: 0px;
+        }
+    }
+    @include media-breakpoint-down(lg) { 
+        flex-direction: column;
+        padding: 56px 32px 0 32px;
+        position: absolute;
+        z-index: 3;
+        top: 0px;
+        right: -992px;
+        width: 100%;
+    }
+    &.with-transperent{
+        background-color: transparent;
+        @include media-breakpoint-down(lg) { 
+            background-color: $primary-color-1; 
+        }
+    }
+    .m-search{
+        .smw-icon-search{
+            &::before{
+                color: $secondary-color-1;
+                font-size: 30px;
+            }
+        }
+    }
     &__right{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
         align-self: stretch;
+        @include media-breakpoint-down(lg) { 
+            flex-direction: column-reverse;
+            padding: 32px 0px;
+            gap: 32px;
+        }
         .button__translate {
             margin-right: 12px;
         }
     }
+    .smwDetails{
+        display: flex;
+        gap: 24px;
+        @include media-breakpoint-down(lg) {
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+        }
+        .smwContactDetails{
+            @include media-breakpoint-down(lg) {
+                padding: 16px 24px;                   
+            }
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                gap: 8px;                
+            }
+        }
+    }
     .mainNav{
         padding: 6.1px 0px;
+        display: flex;
+        gap: 40px;
+        @include media-breakpoint-down(lg) { 
+            width: 100%;
+            flex-direction: column;
+        }
         .list-group{
             gap: 40px;
+            @include media-breakpoint-down(lg) { 
+                gap: 0px;
+            }
         }
         &__item{
+            @include media-breakpoint-down(lg) {
+                padding: 25.33px 0px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+                &:first-child{
+                    border-top: 1px solid rgba(255, 255, 255, 0.40);
+                }
+            }
+            &:hover{
+                .p__small{
+                    text-decoration: underline;
+                }
+                .smw-icon-right-angle{
+                    transform: rotate(90deg);
+            }
+            }
             &-link{
                 color: $white-color-1;
                 text-decoration: none;
                 display: flex;
                 align-items: center;
                 gap: 8px;
+                @include media-breakpoint-down(lg) { 
+                    justify-content: space-between;
+                }
+                
+                &.active{
+                    .p__small{
+                        text-decoration: underline;
+                    }
+                }
                 .p__small{
                     text-transform: uppercase;
+                    font-weight: 700;
                 }
-                .smw-icon-right-angle, .smw-icon-search{
+                .smw-icon-search{
+                    &::before{
+                        color: $secondary-color-1;
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        &::before{
+                            border: 1px solid $secondary-color-1;
+                            
+                        }
+
+                    }
+                }
+                .smw-icon-right-angle{
                     &::before{
                         color: $white-color-1;
                     }
@@ -43,7 +145,6 @@
         }
         &__subMenu{
             &-link{
-                border: 1px solid red;
                 text-decoration: none;
             }
         }
@@ -53,18 +154,65 @@
 /* Sub Menu Navigation */
 .headerWrapper{
     background-color: $primary-color-1;
+    @include media-breakpoint-up(lg) { 
+        display: none;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 56px 32px 32px 32px; 
+        position: absolute;
+        top: 0px;
+        right: -991px;        
+    }
+    &.open{
+        @include media-breakpoint-up(lg) { 
+            display: block;
+        }
+        @include media-breakpoint-down(lg) { 
+            right: 0px;
+        }
+    }
+    &#expertise{
+        .mainNav__subMenu{
+            .mainNav__subMenu-item{
+                padding: 8.33px 0px;
+                @include media-breakpoint-down(lg) { 
+                    padding: 17px 0px;                    
+                }
+            }
+        }
+    }
     .header{
         &__top{
+            .smw-icon-button-left{
+                &::before{
+                    color: $white-color-1;
+                    font-size: 25px;
+                }
+            }
+            .smw-icon-search{
+                &::before{
+                    color: $secondary-color-1;
+                    font-size: 30px;
+                }
+            }
             .mw-386-6{
                 max-width: 386.6px;
+                @include media-breakpoint-down(lg) {
+                    max-width: 100%;
+                }
             }
             .mainNav{
                 &__subMenu{
                     padding: 5.6rem 0px;
+                    @include media-breakpoint-down(lg) {
+                        padding: 0px 0px;
+                    }
                     &.mw-396{
                         max-width: 396px;
-                    }
-                    
+                        @include media-breakpoint-down(lg) {
+                            max-width: 100%;
+                        }
+                    }                    
                     &-item{
                         padding: 14px 0px;
                         border-bottom: 1px solid $primary-color-4;
@@ -80,16 +228,69 @@
                         &:hover{
                             text-decoration: underline;
                         }
+                        .p__small{
+                            font-weight: 700;
+                        }
                     }
+                }
+            }
+            .submenu-back{
+                border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+            }
+            .m-height{
+                @include media-breakpoint-down(lg) { 
+                    height: 378px;
+                    overflow-y: scroll;
                 }
             }
         }
         &__bottom{
             padding: 24px 0px;
             background-color: $secondary-color-1;
+            @include media-breakpoint-down(lg) {                
+                padding: 32px 0px;
+                background-color: $primary-color-1;
+            }
+            .smwDetails{
+                @include media-breakpoint-down(lg) {                
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 32px;
+                }
+                .smwContactDetails{
+                    @include media-breakpoint-down(lg) {
+                        padding: 16px 24px;                   
+                    }
+                    @include media-breakpoint-down(md) {
+                        flex-direction: column;
+                        gap: 8px;                
+                    }
+                }
+            }
             &-left{
                 max-width: 552px;
             }
+        }
+        &__sub-header{
+            padding: 36.68px 0 36.68px 0;
+            @include media-breakpoint-down(lg) {
+                padding: 0px 0 36.68px 0;
+            }
+        }
+    }    
+}
+
+/* Mobile Header */
+.m-header{
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    padding: 56px 32px 0 32px;
+    .smw-icon-search{
+        &::before{
+            color: $secondary-color-1;
+            font-size: 30px;
         }
     }
 }
