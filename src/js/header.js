@@ -2,7 +2,7 @@ $(document).ready(function(){
     /* Close Menu */
     function closeMenu(){
         $('.headerWrapper').removeClass('open');
-        $('.mainNav__item-link').removeClass('active');
+        $('.mainNav__item-link').removeClass('active');        
     }
 
     /* Open Menu */

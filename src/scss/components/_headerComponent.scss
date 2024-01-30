@@ -91,10 +91,14 @@
             }
             &:hover{
                 .p__small{
-                    text-decoration: underline;
+                    @include media-breakpoint-up(lg) {
+                        text-decoration: underline;
+                    }
                 }
                 .smw-icon-right-angle{
-                    transform: rotate(90deg);
+                    @include media-breakpoint-up(lg) {
+                        transform: rotate(90deg);
+                    }
             }
             }
             &-link{
