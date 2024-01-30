@@ -1,0 +1,10 @@
+.card-section {
+    padding: 88px 0;
+
+    &__content {
+        display: grid;
+        gap: 28px;
+        align-items: center;
+        max-width: 547px;
+    }
+}

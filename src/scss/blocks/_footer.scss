@@ -45,7 +45,7 @@
 
             @include media-breakpoint-down(md) {
                 display: grid;
-                gap: 64px;
+                gap: 56px;
                 max-width: 420px;
 
             }
@@ -63,7 +63,7 @@
 
                 @include media-breakpoint-down(md) {
                     display: grid;
-                    gap: 64px;
+                    gap: 56px;
                 }
 
                 @include media-breakpoint-between(md, lg) {
@@ -98,7 +98,7 @@
 
                     @include media-breakpoint-down(md) {
                         display: grid;
-
+                        gap: 32px;
                     }
 
                     &-quik-links {
