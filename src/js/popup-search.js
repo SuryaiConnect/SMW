@@ -15,31 +15,3 @@ $(document).ready(function(){
         bodyEl.removeChild(backdrop);
     });
 });
-
-
-
-
-
-
-
-/* Open Popup */
-popupBtn.forEach((item) => {
-    item.addEventListener('click', function () {
-        popup.classList.add('open');
-        bodyEl.classList.add('popup-open');
-        bodyEl.appendChild(backdrop);
-    })
-})
-
-// popupBtn.addEventListener('click', function () {
-//     popup.classList.add('open');
-//     bodyEl.classList.add('popup-open');
-//     bodyEl.appendChild(backdrop);
-// })
-
-/* Open Close */
-closeIcon.addEventListener('click', function () {
-    popup.classList.remove('open');
-    bodyEl.classList.remove('popup-open');
-    bodyEl.removeChild(backdrop);
-})
