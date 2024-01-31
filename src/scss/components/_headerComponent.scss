@@ -6,6 +6,9 @@
     align-items: flex-start;
     position: relative;
     z-index: 3;
+    &__logo{
+        height: 95px;
+    }
     &.slide-open{
         @include media-breakpoint-down(lg) { 
             right: 0px;
@@ -58,6 +61,9 @@
             width: 100%;
         }
         .smwContactDetails{
+            p{
+                line-height: 22px;
+            }
             @include media-breakpoint-down(lg) {
                 padding: 16px 24px;                   
             }
@@ -91,10 +97,14 @@
             }
             &:hover{
                 .p__small{
-                    text-decoration: underline;
+                    @include media-breakpoint-up(lg) {
+                        text-decoration: underline;
+                    }
                 }
                 .smw-icon-right-angle{
-                    transform: rotate(90deg);
+                    @include media-breakpoint-up(lg) {
+                        transform: rotate(90deg);
+                    }
             }
             }
             &-link{
@@ -115,6 +125,9 @@
                 .p__small{
                     text-transform: uppercase;
                     font-weight: 700;
+                    font-style: normal;
+                    line-height: 20px;
+                    letter-spacing: 1.24px;
                 }
                 .smw-icon-search{
                     &::before{
@@ -234,13 +247,27 @@
                     }
                 }
             }
-            .submenu-back{
-                border-bottom: 1px solid rgba(255, 255, 255, 0.40);
-            }
             .m-height{
                 @include media-breakpoint-down(lg) { 
                     height: 378px;
                     overflow-y: scroll;
+                    scrollbar-width: thin;
+                    scrollbar-color: $white-color-1 rgba(255, 255, 255, 0.40);
+                    border-radius: 16px;
+                    /* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+                    &::-webkit-scrollbar {
+                        width: 8px;
+                    }
+                    
+                    &::-webkit-scrollbar-thumb {
+                        background-color: rgba(255, 255, 255, 0.40);
+                    }
+                    
+                    &::-webkit-scrollbar-track {
+                        border-radius: 16px;
+                        background-color: $white-color-1;
+                    }
+  
                 }
             }
         }
