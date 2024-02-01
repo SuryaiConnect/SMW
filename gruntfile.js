@@ -115,8 +115,10 @@ module.exports = function(grunt){
     })
 
     // build
-    grunt.registerTask('build', ['sass','cssmin','uglify','copy','image:dynamic']);
+    // grunt.registerTask('build', ['sass','cssmin','uglify','copy','image:dynamic']);
+    grunt.registerTask('build', ['sass','cssmin','uglify','image:dynamic']);
 
     // Default
-    grunt.registerTask('default', ['sass','cssmin','uglify','copy','watch']);
+    // grunt.registerTask('default', ['sass','cssmin','uglify','copy','watch']);
+    grunt.registerTask('default', ['sass','cssmin','uglify','watch']);
 }
