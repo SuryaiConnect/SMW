@@ -1,22 +1,25 @@
-.arrestHelpline{
-    padding: 112px 0px;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    .smw-icon-phone{
-        &::before{
+.arrestsection{
+    background: $white-color-3;
+    .arrestHelpline{
+        padding: 112px 0px;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .smw-icon-phone{
+            &::before{
+                color: $secondary-color-4;
+                font-size: 28px;
+            }
+        }
+        .smw-phone{
             color: $secondary-color-4;
             font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px; /* 128.571% */
+            letter-spacing: -0.28px;
         }
-    }
-    .smw-phone{
-        color: $secondary-color-4;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 36px; /* 128.571% */
-        letter-spacing: -0.28px;
     }
 }
