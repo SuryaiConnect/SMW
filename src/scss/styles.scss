@@ -35,6 +35,7 @@ Version: 1.0
 @import 'components/imageComponent';
 @import 'components/searchbarComponent';
 @import 'components/thankYouSuccessComponent';
+@import 'components/popupComponent';
 
 
 // Sections
@@ -42,3 +43,7 @@ Version: 1.0
 @import 'sections/sections';
 @import 'sections/ctaSection';
 @import 'sections/contentSection';
+@import 'sections/arrestHelplineSection';
+@import 'sections/testimonialSection';
+@import 'sections/notableCasesSection';
+@import 'sections/insightSection';

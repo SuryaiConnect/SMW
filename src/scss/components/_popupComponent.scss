@@ -1,0 +1,42 @@
+.popup{
+    background-color: transparent;
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    z-index: 100;
+    @include media-breakpoint-down(lg) { 
+        width: 95%;
+    }
+    @include media-breakpoint-down(md) { 
+        width: 90%;
+    }
+    &.open{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__close{
+        cursor: pointer;
+    }
+    &-backdrop{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: $primary-color-1;
+        opacity: 0.5;
+    }
+    .smw-icon-close{
+        &::before{
+            color: $white-color-1;
+        }
+    }
+}

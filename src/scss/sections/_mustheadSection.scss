@@ -1,8 +1,8 @@
 .musthead{
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     width: 100%;
+    position: relative;
     &::before{
         content: '';
         position: absolute;
@@ -47,13 +47,24 @@
             // }
         }
     }
-    &__article{
+    .musthead__articleWrapper{
+        // height: 889px;
+        height: 806px; 
         z-index: 2;
         position: relative;
-        max-width: 737px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    &__article{
+        max-width: 737px;               
         &-content{
             font-size: 20px;
             margin-bottom: 94px;
         }
+    }
+    .page-scroll-down{
+        cursor: pointer;
     }
 }
