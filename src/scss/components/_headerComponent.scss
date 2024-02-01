@@ -13,6 +13,12 @@
         @include media-breakpoint-down(lg) { 
             right: 0px;
         }
+        &.activeZ{
+            /* Overlapping submenu fixes */
+            @include media-breakpoint-down(lg) { 
+                z-index: -3;
+            }
+        }
     }
     @include media-breakpoint-down(lg) { 
         flex-direction: column;
@@ -252,11 +258,13 @@
                     height: 378px;
                     overflow-y: scroll;
                     scrollbar-width: thin;
-                    scrollbar-color: $white-color-1 rgba(255, 255, 255, 0.40);
-                    border-radius: 16px;
+                    scrollbar-color: $white-color-1 rgba(255, 255, 255, 0.40);                    
                     /* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+
                     &::-webkit-scrollbar {
+                        border: 1px solid red;
                         width: 8px;
+                        border-radius: 16px;
                     }
                     
                     &::-webkit-scrollbar-thumb {

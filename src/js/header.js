@@ -8,6 +8,9 @@ $(document).ready(function(){
     /* Open Menu */
     function openMenu(menuItemId){
         // $('.headerWrapper ').addClass('open');
+        if($(this).hasClass('slide-open')){
+            $('.header').removeClass('activeZ');
+        }
         $('#'+menuItem).addClass('open');
     }
 
@@ -26,6 +29,9 @@ $(document).ready(function(){
                 closeMenu();
                 $(this).addClass('active');
                 openMenu(menuItem);
+                setTimeout(function() {
+                    $('.header').addClass('activeZ');
+                }, 200);
             }
         }else{
             closeMenu();                    
@@ -38,6 +44,7 @@ $(document).ready(function(){
 
     /* Open Main Nav */
     $('#m-burger').click(function(){
+        $('.header').removeClass('activeZ');
         $('.header').addClass('slide-open'); 
     })
     
@@ -48,8 +55,12 @@ $(document).ready(function(){
     
     /* submenu back */
     $('.submenu-back').click(function(){
-        $('.headerWrapper').removeClass('open'); 
-        $('.mainNav__item-link').removeClass('active'); 
+        $('.header').removeClass('activeZ'); 
+
+        setTimeout(function() {
+            $('.headerWrapper').removeClass('open'); 
+            $('.mainNav__item-link').removeClass('active'); 
+        }, 200); 
     })
 
     /* close submenu - main menu (close all) */
