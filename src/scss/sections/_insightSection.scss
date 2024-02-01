@@ -1,6 +1,7 @@
 .insightSection{
     padding: 88px 0px;
     background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
+    
     .container-fluid{
         @include media-breakpoint-down(xs) {
             padding: 0;
