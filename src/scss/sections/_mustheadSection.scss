@@ -3,6 +3,9 @@
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
+    @include media-breakpoint-down(lg) {
+        background-position: right top;
+     }
     &::before{
         content: '';
         position: absolute;
@@ -17,11 +20,11 @@
         position: absolute;
         content: '';
         width: 100%;
-        height: 66px;
+        height: 82px;
         left: 0px;
         background-size: cover;
         z-index: 2;
-        background: url('./../images/substract.svg') center center no-repeat;
+        background: url('./../images/substract-white.svg') center center no-repeat;
         bottom: 0px;
         background-size: cover;
     }
@@ -68,12 +71,55 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        @include media-breakpoint-down(lg) {
+            height: 640px; 
+        }
+        @include media-breakpoint-down(md) {
+            padding: 58px 32px;
+            justify-content: start;
+            text-align: center;
+        }
     }
     &__article{
-        max-width: 737px;               
+        max-width: 737px;   
+        &-title{
+            color: $white-color-1;
+            line-height: 52px;
+            max-width: 600px;
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+                font-size: 32px;
+                line-height: 36px; /* 112.5% */
+                letter-spacing: -0.32px;
+            }
+        }            
         &-content{
+            color: $white-color-1;
             font-size: 20px;
             margin-bottom: 94px;
+            line-height: 28px; /* 140% */
+            letter-spacing: -0.02px;
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.016px;
+                margin-bottom: 48px;
+            }
+        }
+        &-cap{
+            color: $white-color-1;
+            font-weight: 700;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 1.246px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+    }
+    .button__blue{
+        max-width: 274px;
+        width: 274px;
+        @include media-breakpoint-down(md) {
+            margin: 0 auto 48px auto;
         }
     }
     .page-scroll-down{

@@ -13,3 +13,33 @@ body{
     box-sizing: border-box;
     overflow-x: hidden; 
 }
+
+/* SMW Container Fixes */
+.mainNavContainer{
+    // max-width: 1336px;
+    // padding: 0 88px;
+    max-width: 95%; 
+    margin: 0 auto;
+    @include media-breakpoint-up(vxl) {
+        max-width: 1512px;
+        padding: 0 88px;
+        margin: 0 auto;
+        border: 2px solid red;
+    }
+    @include media-breakpoint-down(lg) {
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+}
+
+.smw-container{    
+    @include media-breakpoint-up(xxl) {
+        // above 1400
+        max-width: 1214px;
+        margin: 0 auto;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 32px;
+        max-width: 1214px;
+    }
+}

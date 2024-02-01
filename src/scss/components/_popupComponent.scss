@@ -33,6 +33,27 @@
         z-index: 99;
         background-color: $primary-color-1;
         opacity: 0.5;
+        @include media-breakpoint-down(md) {
+            opacity: 1;
+        }
+    }
+    .smw-searchbar{
+        @include media-breakpoint-down(md) {
+            padding: 0px;
+            background-color: transparent;
+        }
+        &-field{
+            @include media-breakpoint-down(md) {
+                border-radius: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+        .button__blue{
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
     }
     .smw-icon-close{
         &::before{
