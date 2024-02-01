@@ -30,6 +30,7 @@
         color: $white-color-1;
         border-radius: 64px;
         border: 1px solid $white-color-1;
+        cursor: pointer; 
         &:hover{
             background: rgba(255, 255, 255, 0.10);
         }

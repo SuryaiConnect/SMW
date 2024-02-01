@@ -1,0 +1,51 @@
+.insightSection{
+    padding: 88px 0px;
+    background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
+    .container-fluid{
+        @include media-breakpoint-down(xs) {
+            padding: 0;
+        }
+    }
+    .article{
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        @include media-breakpoint-down(xs) {
+            padding: 0 32px;
+        }
+    }
+    .insightCard{
+        background-color: $white-color-1;
+        @include media-breakpoint-up(lg) {
+            width: 31%;
+        } 
+    }
+    #insightSlider{
+        padding: 64px 0px 0px 0px;
+        @include media-breakpoint-up(lg) {
+            padding: 64px 0px; 
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: space-between;
+        }
+        .owl-stage-outer{
+            padding-bottom: 5px;
+        }
+        .owl-dots{
+            margin: 32px 0 32px 0px;
+            .owl-dot{
+                &.active{
+                    span{
+                        background-color: $primary-color-2;
+                    }
+                }
+                span{
+                    width: 14px;
+                    height: 14px;
+                    background: $secondary-color-5;
+                }
+            }
+        }
+    }
+}
