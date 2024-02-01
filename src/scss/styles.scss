@@ -6,9 +6,6 @@ Version: 1.0
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-// Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap';
-
 // Utilities
 @import 'utilities/variables';
 @import 'utilities/utilities';
@@ -42,4 +39,6 @@ Version: 1.0
 
 // Sections
 @import 'sections/mustheadSection';
-@import 'sections/card-section';
+@import 'sections/sections';
+@import 'sections/ctaSection';
+@import 'sections/contentSection';
