@@ -89,6 +89,9 @@
         }
         .list-group{
             gap: 40px;
+            @include media-breakpoint-down(xl) {
+                gap: 30px; 
+            }
             @include media-breakpoint-down(lg) { 
                 gap: 0px;
             }
@@ -322,6 +325,9 @@
     flex-direction: column;
     z-index: 2;
     padding: 56px 32px 0 32px;
+    @include media-breakpoint-down(lg) {
+        padding: 56px 32px 37.89px 32px;
+    }
     .smw-icon-search{
         &::before{
             color: $secondary-color-1;
