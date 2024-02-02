@@ -46,6 +46,24 @@
     padding: 32px 0px;
 }
 
+.smw-pr-md-12 {
+    @include media-breakpoint-up(md) {
+        padding-right: 12px;
+    }
+}
+
+// .smw-pb-mdd-24 {
+//     @include media-breakpoint-down(md) {
+//         gap: 24px;
+//     }
+// }
+
+.smw-pl-md-12 {
+    @include media-breakpoint-up(md) {
+        padding-left: 12px;
+    }
+}
+
 
 /* Gap Classes */
 .gap-8 {
@@ -62,6 +80,16 @@
 
 .gap-24 {
     gap: 24px;
+}
+
+.gap-dmd-24 {
+    @include media-breakpoint-down(md) {
+        gap: 24px;
+    }
+}
+
+.gap-28 {
+    gap: 28px;
 }
 
 .gap-31 {

@@ -17,7 +17,7 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-image": "^6.4.0"
+    "grunt-image": "^4.0.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.2"
