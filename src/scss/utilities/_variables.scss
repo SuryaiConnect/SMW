@@ -16,3 +16,15 @@ $white-color-3: #DBEAF9;
 
 /* Text Colors */
 $text-color-1: #F5F5F5;
+
+
+/* Break Points */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  vxl: 1515px
+);
