@@ -1,9 +1,12 @@
 .notableCasesSection{
-    padding: 88px 0px;
+    padding: 158px 0px 88px 0px;
     background-color: $primary-color-2;
     position: relative;
+    @include media-breakpoint-down(md) {
+        padding: 88px 0px 88px 0px;
+    }
     .container-fluid{
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             padding: 0;
         }
     }
@@ -13,9 +16,18 @@
         width: 100%;
         height: 80px;
         left: 0px;
-        background: url('./../images/curve-primary-bottom.svg') center center no-repeat;
+        background: url('./../images/curve-primary-bottom.svg') center 0 no-repeat;
         bottom: -80px;
         background-size: cover;
+        @include media-breakpoint-down(lg) {
+            height: 57px;
+            background-size: 100%;
+            bottom: -57px;  
+        }
+        @include media-breakpoint-down(md) {
+            height: 30px;
+            bottom: -30px;
+        }
     }
     .article{
         @include media-breakpoint-up(md) {

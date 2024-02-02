@@ -1,7 +1,8 @@
 .testimonialSection{
-    padding: 15px 0px;
+    padding: 88px 0px;
     background-color: $secondary-color-1;
     position: relative;
+    margin-top: 57px;
     &:before, &:after{
         position: absolute;
         content: '';
@@ -9,16 +10,43 @@
         height: 80px;
         left: 0px;        
         z-index: 2;
+        background-size: cover;
+        @include media-breakpoint-down(lg) {
+            height: 57px;
+        }
+        @include media-breakpoint-down(md) {
+            height: 30px;
+        }
     }
     &:before{
-        background: url('./../images/curve-top.svg') center center no-repeat;
-        top: -80px;
+        background: url('./../images/curve-top.svg') center 100% no-repeat;
+        top: -57px;
         background-size: cover;
+        @include media-breakpoint-up(vxl) {
+            top: -80px;
+        }      
+        @include media-breakpoint-down(lg) {
+            top: -56px;
+            background-size: 100%;
+        }
+        @include media-breakpoint-down(md) {
+            top: -30px;
+        }
     }
     &:after{
-        background: url('./../images/curve-bottom.svg') center center no-repeat;
-        bottom: -80px;
+        background: url('./../images/curve-bottom.svg') center 0% no-repeat;
+        bottom: -57px;
         background-size: cover;
+        @include media-breakpoint-up(vxl) {
+            bottom: -80px;
+        }
+        @include media-breakpoint-down(lg) {
+            bottom: -57px;
+            background-size: 100%;
+        }
+        @include media-breakpoint-down(md) {
+            bottom: -30px;
+        }
     }
     @include media-breakpoint-down(md) {
         padding: 72px 0px;        
