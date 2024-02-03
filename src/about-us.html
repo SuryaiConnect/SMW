@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="smwHead">
+    <div class="smwHead">
         <div class="mainNavContainer">
             <header class="m-header d-flex d-lg-none">
                 <div class="d-flex justify-content-between align-self-stretch">
@@ -21,12 +21,9 @@
                     <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
                         <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
                                     class="smw-icon-search"></span></a></li>
-                        <li class="m-burger" id="m-burger"><a href="javascript:;"><svg width="27" height="22"
-                                    viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0 1.54883C0 1.08008 0.410156 0.611328 0.9375 0.611328H25.3125C25.7812 0.611328 26.25 1.08008 26.25 1.54883C26.25 2.07617 25.7812 2.48633 25.3125 2.48633H0.9375C0.410156 2.48633 0 2.07617 0 1.54883ZM0 10.9238C0 10.4551 0.410156 9.98633 0.9375 9.98633H25.3125C25.7812 9.98633 26.25 10.4551 26.25 10.9238C26.25 11.4512 25.7812 11.8613 25.3125 11.8613H0.9375C0.410156 11.8613 0 11.4512 0 10.9238ZM26.25 20.2988C26.25 20.8262 25.7812 21.2363 25.3125 21.2363H0.9375C0.410156 21.2363 0 20.8262 0 20.2988C0 19.8301 0.410156 19.3613 0.9375 19.3613H25.3125C25.7812 19.3613 26.25 19.8301 26.25 20.2988Z"
-                                        fill="white" />
-                                </svg></a></li>
+                        <li class="m-burger" id="m-burger"><a href="javascript:;" class="text-decoration-none">
+                            <span class="smw-icon-burger"></span>
+                        </a></li>
                     </ul>
                 </div>
             </header>
@@ -308,11 +305,11 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Main Navigation -->
-    <section class="banner" style="background-image: url('./images/Intersect.svg');">
+    </div> <!-- Main Navigation -->
+    <div class="banner" style="background-image: url('./images/Intersect.svg');">
         
-    </section> <!-- Musthead Internal -->
-    <section class="contentSections-bg">
+    </div> <!-- Musthead Internal -->
+    <div class="contentSections-bg">
         <div class="container-fluid container-lg smw-container">
             <div class="row">
                 <div class="col-sm-12">
@@ -342,8 +339,8 @@
                 </div>
             </div>
         </div>
-    </section> <!-- About -->
-    <section class="card-section">
+    </div> <!-- About -->
+    <div class="card-section">
         <div class="container smw-container">
             <div class="row align-items-center card-section__gap">
                 <div class="col-12 col-sm-12 col-md-5 ">
@@ -361,26 +358,26 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Card Section -->
-    <section class="testimonialSection" id="testimonialSection">
+    </div> <!-- Card Section -->
+    <div class="testimonialSection" id="testimonialSection">
         <div class="container smw-container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="owl-carousel owl-theme" id="testimonialSlider">
                         <article class="article text-center">
                             <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse, collaborative and extremely high quality skill set across the range of legal professionals and support staff."</p>
-                            <p class="article__caption smw-mb-24">Legal 500 Rankings 2023</p>
+                            <h4 class="article__caption smw-mb-24">Legal 500 Rankings 2023</h4>
                         </article>
                         <article class="article text-center">
                             <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse, collaborative and extremely high quality skill set across the range of legal professionals and support staff."</p>
-                            <p class="article__caption smw-mb-24">Legal 500 Rankings 2023</p>
+                            <h4 class="article__caption smw-mb-24">Legal 500 Rankings 2023</h4>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-    </section> <!-- Testimonial -->
-    <section class="card-section">
+    </div> <!-- Testimonial -->
+    <div class="card-section">
         <div class="container smw-container">
             <div class="row align-items-center card-section__gap flex-column-reverse flex-md-row-reverse">
                 <div class="col-12 col-sm-12 col-md-5  offset-md-1">
@@ -395,8 +392,8 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Card Section Reverse -->
-    <section class="meetourTeam">
+    </div> <!-- Card Section Reverse -->
+    <div class="meetourTeam">
         <div class="container-fluid container-lg smw-container">
             <div class="row">
                 <div class="col-sm-12">
@@ -492,8 +489,8 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Meet Our Team -->
-    <section class="requestSections with-bg">
+    </div> <!-- Meet Our Team -->
+    <div class="requestSections with-bg">
         <div class="container-fluid container-lg smw-container">
             <div class="row">
                 <div class="col-12">
@@ -528,7 +525,7 @@
                                 <div class="col-12">
                                     <label for="content" class="form-label smw-btn-text">What is your enquiry
                                         regarding?</label>
-                                    <textarea class="form-control-textarea p__small" id="content" name="" cols="50" rows="4"></textarea>
+                                    <textarea class="form-control-textarea p__small" id="content" name="enquiry" cols="50" rows="4"></textarea>
                                     <!-- <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> -->
                                 </div>
                                 <div class="col-12">
@@ -550,8 +547,8 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Request Call Section -->
-    <section class="popup smart-animation" id="popup">
+    </div> <!-- Request Call Section -->
+    <div class="popup smart-animation" id="popup">
         <div class="container smw-container">
             <div class="row">
                 <div class="col-sm-12 align-self-end">
@@ -563,7 +560,7 @@
                     <div class="smw-searchbar">
                         <div class="d-md-flex">
                             <input type="text" class="smw-searchbar-field form-control" placeholder="Enter Search"
-                                aria-label="Enter Search" aria-describedby="button-addon2">
+                                aria-label="Enter Search">
                             <button
                                 class="button__blue justify-content-center d-flex gap-8 align-items-center"><span>Search</span><span
                                     class="smw-icon-right-arrow"></span></button>
@@ -572,7 +569,7 @@
                 </div>
             </div>
         </div>
-    </section> <!-- Search Popup -->
+    </div> <!-- Search Popup -->
     <!-- footer section -->
     <footer class="smwFooter">
         <div class="smwFooter__top">
@@ -612,7 +609,7 @@
                             <div class="footer__left">
                                 <div class="footer__left-left">
                                     <div class="footer__left-top">
-                                        <img class="smwFooter__midle-icon" src="../dist/images/SMW Logo.svg" alt="">
+                                        <img class="smwFooter__midle-icon" src="../dist/images/smw-logo.svg" alt="SMW Logo">
                                         <p class="p__small text-white">Sonn Macmillan Walker is one of the largest firms
                                             of
                                             specialist
@@ -621,14 +618,14 @@
                                         </p>
                                     </div>
                                     <div class="d-flex gap-31 justify-content-center justify-content-md-start">
-                                        <img src="../dist/images/Legal 500.svg" alt="">
-                                        <img src="../dist/images/Chambers Logo.svg" alt="">
+                                        <img src="../dist/images/legal-500.svg" alt="">
+                                        <img src="../dist/images/chambers-logo.svg" alt="chambers-logo">
 
                                     </div>
                                 </div>
                                 <div class="footer__left-right">
                                     <div class="footer__left-right-quik-links">
-                                        <label class="footer__left-right-lable" for="">Quick Links</label>
+                                        <label class="footer__left-right-lable">Quick Links</label>
                                         <ul class="d-flex gap-8 flex-column">
                                             <li><a class="footer__left-right-links" href="javascript:;">Our
                                                     People</a></li>
@@ -639,8 +636,8 @@
                                         </ul>
                                     </div>
                                     <div class="footer__left-right-more-pages">
-                                        <label class="footer__left-right-lable" for="">More pages</label>
-                                        <ul class="d-flex gap-8 flex-column">
+                                        <label class="footer__left-right-lable">More pages</label>
+                                        <ul class="d-flex gap-8 flex-column" id="Mor">
                                             <li><a class="footer__left-right-links" href="javascript:;">Terms and
                                                     conditions</a></li>
                                             <li><a class="footer__left-right-links" href="javascript:;">Policy
@@ -655,7 +652,7 @@
                             </div>
                             <div class="footer__right">
                                 <div>
-                                    <img src="../dist/images/solitary-regulation-authority.png" alt="">
+                                    <img src="../dist/images/solitary-regulation-authority.png" alt="solitary-regulation-authority">
                                 </div>
                                 <p class="footer__right-content">
                                     Sonn Macmillan Walker is a trading name of Sonn Macmillan Walker Ltd, a company
