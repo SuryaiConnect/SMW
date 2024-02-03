@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="musthead" style="background-image: url('./images/musthead-bg.jpg');">
+    <div class="musthead" style="background-image: url('./images/musthead-bg.jpg');">
         <div class="mainNavContainer">
             <header class="m-header with-transperent d-flex d-lg-none">
                 <div class="d-flex justify-content-between align-self-stretch">
@@ -21,39 +21,25 @@
                     <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
                         <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
                                     class="smw-icon-search"></span></a></li>
-                        <li class="m-burger" id="m-burger"><a href="javascript:;"><svg width="27" height="22"
-                                    viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0 1.54883C0 1.08008 0.410156 0.611328 0.9375 0.611328H25.3125C25.7812 0.611328 26.25 1.08008 26.25 1.54883C26.25 2.07617 25.7812 2.48633 25.3125 2.48633H0.9375C0.410156 2.48633 0 2.07617 0 1.54883ZM0 10.9238C0 10.4551 0.410156 9.98633 0.9375 9.98633H25.3125C25.7812 9.98633 26.25 10.4551 26.25 10.9238C26.25 11.4512 25.7812 11.8613 25.3125 11.8613H0.9375C0.410156 11.8613 0 11.4512 0 10.9238ZM26.25 20.2988C26.25 20.8262 25.7812 21.2363 25.3125 21.2363H0.9375C0.410156 21.2363 0 20.8262 0 20.2988C0 19.8301 0.410156 19.3613 0.9375 19.3613H25.3125C25.7812 19.3613 26.25 19.8301 26.25 20.2988Z"
-                                        fill="white" />
-                                </svg></a></li>
+                        <li class="m-burger" id="m-burger">
+                            <a href="javascript:;" class="text-decoration-none">
+                                <span class="smw-icon-burger"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </header>
             <header class="header with-transperent smw-py-32 smart-animation">
                 <div class="header__left d-flex justify-content-between align-self-stretch">
                     <a href="javascript:;" class="header__logo">
-                        <img src="./images/smw-logo.png" alt="SMW Logo" width="117" height="95">
+                        <img src="./images/smw-logo.svg" alt="SMW Logo" width="117" height="95">
                     </a>
-                    <ul class="m-search d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
-                        <li class=""><a href="javascript:;" class="text-decoration-none"><span
-                                    class="smw-icon-search"></span></a></li>
-                        <li class="">
-                            <a href="javascript:;" class="d-none d-lg-block">
-                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0 1.54883C0 1.08008 0.410156 0.611328 0.9375 0.611328H25.3125C25.7812 0.611328 26.25 1.08008 26.25 1.54883C26.25 2.07617 25.7812 2.48633 25.3125 2.48633H0.9375C0.410156 2.48633 0 2.07617 0 1.54883ZM0 10.9238C0 10.4551 0.410156 9.98633 0.9375 9.98633H25.3125C25.7812 9.98633 26.25 10.4551 26.25 10.9238C26.25 11.4512 25.7812 11.8613 25.3125 11.8613H0.9375C0.410156 11.8613 0 11.4512 0 10.9238ZM26.25 20.2988C26.25 20.8262 25.7812 21.2363 25.3125 21.2363H0.9375C0.410156 21.2363 0 20.8262 0 20.2988C0 19.8301 0.410156 19.3613 0.9375 19.3613H25.3125C25.7812 19.3613 26.25 19.8301 26.25 20.2988Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                            <a href="javascript:;" class="d-block d-lg-none" id="close-mainNav">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.9844 19.002L10.25 11.209L2.45703 19.002C2.10547 19.3535 1.51953 19.3535 1.10938 19.002C0.757812 18.5918 0.757812 18.0059 1.10938 17.6543L8.90234 9.86133L1.10938 2.12695C0.757812 1.77539 0.757812 1.18945 1.10938 0.779297C1.51953 0.427734 2.10547 0.427734 2.45703 0.779297L10.25 8.57227L17.9844 0.779297C18.3359 0.427734 18.9219 0.427734 19.332 0.779297C19.6836 1.18945 19.6836 1.77539 19.332 2.12695L11.5391 9.86133L19.332 17.6543C19.6836 18.0059 19.6836 18.5918 19.332 19.002C18.9219 19.3535 18.3359 19.3535 17.9844 19.002Z"
-                                        fill="white" />
-                                </svg>
+                    <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
+                        <li class="m-search"><a href="javascript:;" class="text-decoration-none">
+                            <span class="smw-icon-search"></span></a></li>
+                        <li class="m-close">
+                            <a href="javascript:;" class="text-decoration-none d-block d-lg-none" id="close-mainNav">
+                                <span class="smw-icon-sub-close"></span>
                             </a>
                         </li>
                     </ul>
@@ -110,20 +96,15 @@
                                         <div
                                             class="header__sub-header d-flex justify-content-between align-self-stretch">
                                             <a href="javascript:;">
-                                                <img src="./images/smw-logo.png" alt="SMW Logo">
+                                                <img src="./images/smw-logo.svg" alt="SMW Logo">
                                             </a>
                                             <ul
-                                                class="m-search d-flex align-items-center gap-16 list-group list-group-horizontal">
-                                                <li class=""><a href="javascript:;" class="text-decoration-none"><span
+                                                class="d-flex align-items-center gap-16 list-group list-group-horizontal">
+                                                <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
                                                             class="smw-icon-search"></span></a></li>
-                                                <li class="">
-                                                    <a href="javascript:;" class="close-subNav">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M17.9844 19.002L10.25 11.209L2.45703 19.002C2.10547 19.3535 1.51953 19.3535 1.10938 19.002C0.757812 18.5918 0.757812 18.0059 1.10938 17.6543L8.90234 9.86133L1.10938 2.12695C0.757812 1.77539 0.757812 1.18945 1.10938 0.779297C1.51953 0.427734 2.10547 0.427734 2.45703 0.779297L10.25 8.57227L17.9844 0.779297C18.3359 0.427734 18.9219 0.427734 19.332 0.779297C19.6836 1.18945 19.6836 1.77539 19.332 2.12695L11.5391 9.86133L19.332 17.6543C19.6836 18.0059 19.6836 18.5918 19.332 19.002C18.9219 19.3535 18.3359 19.3535 17.9844 19.002Z"
-                                                                fill="white"></path>
-                                                        </svg>
+                                                <li class="m-close">
+                                                    <a href="javascript:;" class="text-decoration-none close-subNav">
+                                                        <span class=" smw-icon-sub-close"></span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -197,20 +178,15 @@
                                         <div
                                             class="header__sub-header d-flex justify-content-between align-self-stretch">
                                             <a href="javascript:;">
-                                                <img src="./images/smw-logo.png" alt="SMW Logo">
+                                                <img src="./images/smw-logo.svg" alt="SMW Logo">
                                             </a>
                                             <ul
-                                                class="m-search d-flex align-items-center gap-16 list-group list-group-horizontal">
-                                                <li class=""><a href="javascript:;" class="text-decoration-none"><span
+                                                class="d-flex align-items-center gap-16 list-group list-group-horizontal">
+                                                <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
                                                             class="smw-icon-search"></span></a></li>
-                                                <li class="">
-                                                    <a href="javascript:;" class="close-subNav">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M17.9844 19.002L10.25 11.209L2.45703 19.002C2.10547 19.3535 1.51953 19.3535 1.10938 19.002C0.757812 18.5918 0.757812 18.0059 1.10938 17.6543L8.90234 9.86133L1.10938 2.12695C0.757812 1.77539 0.757812 1.18945 1.10938 0.779297C1.51953 0.427734 2.10547 0.427734 2.45703 0.779297L10.25 8.57227L17.9844 0.779297C18.3359 0.427734 18.9219 0.427734 19.332 0.779297C19.6836 1.18945 19.6836 1.77539 19.332 2.12695L11.5391 9.86133L19.332 17.6543C19.6836 18.0059 19.6836 18.5918 19.332 19.002C18.9219 19.3535 18.3359 19.3535 17.9844 19.002Z"
-                                                                fill="white"></path>
-                                                        </svg>
+                                                <li class="m-close">
+                                                    <a href="javascript:;" class="text-decoration-none close-subNav">
+                                                        <span class=" smw-icon-sub-close"></span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -348,14 +324,14 @@
                                     People</span><span class="smw-icon-right-arrow"></span></button>
                             <div class="d-inline-block page-scroll-down"
                                 onclick="scrollToSection('testimonialSection')">
-                                <img src="./images/down-arrow.svg" alt="Go Down" />
+                                <img src="./images/down-arrow.svg" alt="Go Down" >
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div> <!-- MustHead -->
     <section class="arrestsection">
         <div class="container-fluid container-lg smw-container">
             <div class="row">
@@ -371,29 +347,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="popup smart-animation" id="popup">
-        <div class="container smw-container">
-            <div class="row">
-                <div class="col-sm-12 align-self-end">
-                    <p
-                        class="mb-4 d-flex gap-8 align-items-center justify-content-center justify-content-md-end popup__close">
-                        <span class="text-white">Close </span><span class="smw-icon-close"></span></p>
-                </div>
-                <div class="col-sm-12">
-                    <div class="smw-searchbar">
-                        <div class="d-md-flex">
-                            <input type="text" class="smw-searchbar-field form-control" placeholder="Enter Search"
-                                aria-label="Enter Search" aria-describedby="button-addon2">
-                            <button
-                                class="button__blue justify-content-center d-flex gap-8 align-items-center"><span>Search</span><span
-                                    class="smw-icon-right-arrow"></span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> <!-- Areest Section -->
     <section class="testimonialSection" id="testimonialSection">
         <div class="container smw-container">
             <div class="row">
@@ -417,7 +371,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Testimonial -->
     <section class="notableCasesSection">
         <div class="container-fluid container-lg smw-container">
             <div class="row justify-content-between g-0">
@@ -564,7 +518,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Notable Cases Section -->
     <section class="insightSection">
         <div class="container-fluid container-lg smw-container">
             <div class="row">
@@ -681,7 +635,29 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Card Featured -->
+    <section class="popup smart-animation" id="popup">
+        <div class="container smw-container">
+            <div class="row">
+                <div class="col-sm-12 align-self-end">
+                    <p
+                        class="mb-4 d-flex gap-8 align-items-center justify-content-center justify-content-md-end popup__close">
+                        <span class="text-white">Close </span><span class="smw-icon-close"></span></p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="smw-searchbar">
+                        <div class="d-md-flex">
+                            <input type="text" class="smw-searchbar-field form-control" placeholder="Enter Search"
+                                aria-label="Enter Search" aria-describedby="button-addon2">
+                            <button
+                                class="button__blue justify-content-center d-flex gap-8 align-items-center"><span>Search</span><span
+                                    class="smw-icon-right-arrow"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Search Popup -->
     <!-- footer section -->
     <footer class="smwFooter">
         <div class="smwFooter__top">
