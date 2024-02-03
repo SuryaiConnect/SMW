@@ -41,31 +41,7 @@
             }
         }
     }
-    .headerWrapper{
-        position: absolute;
-        z-index: 3;
-        width: 100%;
-        // right: -991px;
-        @include media-breakpoint-up(lg) { 
-            left: 0px;
-            top: 140px;
-        }
-        @include media-breakpoint-down(lg) { 
-            top: 0px;
-            right: -991px;
-        }
-        // .header__bottom, .header__top .row{
-        //     display: none;
-        // }        
-        &.open{
-            right: 0px; 
-            @include media-breakpoint-down(lg) { 
-            }
-            // .header__bottom, .row.open{
-            //     display: flex;
-            // }
-        }
-    }
+
     .musthead__articleWrapper{
         // height: 889px;
         height: 806px; 

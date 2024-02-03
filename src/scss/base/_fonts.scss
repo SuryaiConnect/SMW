@@ -58,7 +58,6 @@ $smw-font-icons: 'smwicons';
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .smw-icon-arrow-right-circle:before {
   content: "\e900";
   color: $primary-color-1;
@@ -67,107 +66,115 @@ $smw-font-icons: 'smwicons';
   content: "\e901";
   color: $primary-color-1;
 }
-.smw-icon-button-left:before {
+.smw-icon-burger:before {
   content: "\e902";
   color: $white-color-1;
 }
-.smw-icon-button-right:before {
+.smw-icon-button-left:before {
   content: "\e903";
   color: $white-color-1;
 }
-.smw-icon-calendar:before {
+.smw-icon-button-right:before {
   content: "\e904";
-  color: $primary-color-1;
+  color: $white-color-1;
 }
-.smw-icon-close:before {
+.smw-icon-calendar:before {
   content: "\e905";
   color: $primary-color-1;
 }
-.smw-icon-close-blue:before {
+.smw-icon-close:before {
   content: "\e906";
+  color: $primary-color-1;
+}
+.smw-icon-close-blue:before {
+  content: "\e907";
   color: $secondary-color-1;
 }
 .smw-icon-close-blue-hover:before {
-  content: "\e907";
-  color: $secondary-color-3
+  content: "\e908";
+  color: $secondary-color-3;
 }
 .smw-icon-default:before {
-  content: "\e908";
-  color: $white-color-1;
-}
-.smw-icon-default-variant-2:before {
   content: "\e909";
   color: $white-color-1;
 }
-.smw-icon-default-variant-3:before {
+.smw-icon-default-variant-2:before {
   content: "\e90a";
   color: $white-color-1;
 }
-.smw-icon-dot:before {
+.smw-icon-default-variant-3:before {
   content: "\e90b";
+  color: $white-color-1;
+}
+.smw-icon-dot:before {
+  content: "\e90c";
   color: $secondary-color-1;
 }
 .smw-icon-down-angle:before {
-  content: "\e90c";
-  color: $primary-color-1;
-}
-.smw-icon-down-arrow:before {
   content: "\e90d";
   color: $primary-color-1;
 }
-.smw-icon-email:before {
+.smw-icon-down-arrow:before {
   content: "\e90e";
   color: $primary-color-1;
 }
-.smw-icon-home:before {
+.smw-icon-email:before {
   content: "\e90f";
+  color: $primary-color-1;
+}
+.smw-icon-home:before {
+  content: "\e910";
   color: $white-color-1;
 }
 .smw-icon-info-circle:before {
-  content: "\e910";
+  content: "\e911";
   color: $primary-color-1;
 }
 .smw-icon-linkedln:before {
-  content: "\e911";
+  content: "\e912";
   color: $white-color-1;
 }
 .smw-icon-linkedln-blue:before {
-  content: "\e912";
+  content: "\e913";
   color: $secondary-color-1;
 }
 .smw-icon-linkedln-blue-hover:before {
-  content: "\e913";
-  color: $secondary-color-3
+  content: "\e914";
+  color: $secondary-color-3;
 }
 .smw-icon-linkedln-hover:before {
-  content: "\e914";
+  content: "\e915";
   color: $white-color-1;
 }
 .smw-icon-phone:before {
-  content: "\e915";
-  color: $primary-color-1;
-}
-.smw-icon-right-angle:before {
   content: "\e916";
   color: $primary-color-1;
 }
-.smw-icon-right-arrow:before {
+.smw-icon-right-angle:before {
   content: "\e917";
   color: $primary-color-1;
 }
-.smw-icon-search:before {
+.smw-icon-right-arrow:before {
   content: "\e918";
   color: $primary-color-1;
 }
-.smw-icon-translate:before {
+.smw-icon-search:before {
   content: "\e919";
-  color: $white-color-1;
+  color: $primary-color-1;
 }
-.smw-icon-twitter:before {
+.smw-icon-sub-close:before {
   content: "\e91a";
   color: $white-color-1;
 }
-.smw-icon-twitter-hover:before {
+.smw-icon-translate:before {
   content: "\e91b";
+  color: $white-color-1;
+}
+.smw-icon-twitter:before {
+  content: "\e91c";
+  color: $white-color-1;
+}
+.smw-icon-twitter-hover:before {
+  content: "\e91d";
   color: $white-color-1;
 }
