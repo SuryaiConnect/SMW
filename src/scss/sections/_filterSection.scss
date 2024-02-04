@@ -66,10 +66,16 @@
             }
 
             .dropdown-item{
+                &:active, &:focus{
+                    color: $primary-color-1;
+                    background-color: transparent;
+                }
                 &:hover{
                     text-decoration: underline;
                 }
             }
         }
+        
+        
     }
 }
