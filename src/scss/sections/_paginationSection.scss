@@ -1,5 +1,8 @@
 .smw-pagination{
     padding: 88px 0px;
+    @include media-breakpoint-down(md) {
+        padding: 44px 0px 88px 0px;
+    }
     &-btn{
         border: 1px solid $primary-color-1;
         width: 52px;

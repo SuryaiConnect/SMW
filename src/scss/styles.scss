@@ -9,6 +9,7 @@ Version: 1.0
 // Utilities
 @import 'utilities/variables';
 @import 'utilities/utilities';
+@import 'utilities/bgcolors';
 
 
 // Base
@@ -17,6 +18,7 @@ Version: 1.0
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animations';
+@import 'base/smwGrid';
 
 // Block
 @import 'blocks/buttons';
@@ -51,3 +53,4 @@ Version: 1.0
 @import 'sections/mustheadInternalSections';
 @import 'sections/meetourteamSection';
 @import 'sections/paginationSection';
+@import 'sections/filterSection';

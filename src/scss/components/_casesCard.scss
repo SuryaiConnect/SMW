@@ -1,8 +1,17 @@
+.caseCardSection{
+    .smw-row{
+        @include dynamic-gap(22px);    
+    }
+    @include media-breakpoint-down(md) { 
+        margin-bottom: 40px;
+    }
+}
 .casesCard{
     padding: 32px;
     border: 1px solid $primary-color-1;
     border-radius: 24px;
     position: relative;
+    margin-top: 21px;
     &__imgWrap{
         display: inline-block;
         width: 52px;

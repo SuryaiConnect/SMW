@@ -4,3 +4,18 @@
     background-position: center bottom;
     background-size: cover;
 }
+
+.rectangle{
+    padding-top: 70px;
+    position: relative;
+    &::before{
+        content: '';
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 212px;
+        position: absolute;
+        z-index: -1;
+        background-color: $primary-color-2;
+    }
+}

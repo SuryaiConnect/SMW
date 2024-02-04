@@ -1,0 +1,38 @@
+/**
+*
+*   
+* $custom-gap: 32px; // Your desired gap value in pixels
+* $base-font-size: 16px; // Bootstrap default base font size
+* .custom-gap-in-rem {
+*   margin-right: $custom-gap / $base-font-size + rem;
+*  }
+*/
+
+
+@mixin dynamic-gap($gap) {
+    gap: $gap;
+    &.row-cols-xl-3 > * {
+      @include media-breakpoint-up(xl) {
+        width: calc(33.33% - #{$gap});
+      }
+    }
+
+    &.row-cols-lg-3 > * {
+      @include media-breakpoint-down(xl) {
+        width: calc(33.33% - #{$gap});
+      }
+    }
+
+    &.row-cols-md-2 > * {
+      @include media-breakpoint-down(lg) {
+        width: calc(50% - #{$gap});
+      }
+    }
+    
+    &.row-cols-1 > * {
+      @include media-breakpoint-down(md) {
+        width: calc(100%);
+      }
+    }    
+  }
+  
