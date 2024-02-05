@@ -1,6 +1,10 @@
 /* Common margin padding classes */
 
-/* Margin Classes */
+/**************************************
+*
+* Margin Classes
+*
+***************************************/
 .smw-mb-8 {
     margin-bottom: 8px;
 }
@@ -16,16 +20,28 @@
 .smw-my-32 {
     margin: 32px 0px;
 }
-
 .smw-mb-32 {
     margin-bottom: 32px;
 }
-
 .smw-mb-34 {
     margin-bottom: 34px;
 }
+.smw-mt-curve-fixes{
+    /* Handling Curve spacing */
+    margin-top: 57px;
+    @include media-breakpoint-up(xxl) {
+        margin-top: 80px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 30px;
+    }
+}
 
-/* Padding Classes */
+/**************************************
+*
+* Padding Classes
+*
+***************************************/
 .smw-py-8-33 {
     padding: 8.33px 0px;
 }
@@ -52,12 +68,6 @@
     }
 }
 
-// .smw-pb-mdd-24 {
-//     @include media-breakpoint-down(md) {
-//         gap: 24px;
-//     }
-// }
-
 .smw-pl-md-12 {
     @include media-breakpoint-up(md) {
         padding-left: 12px;
@@ -65,7 +75,12 @@
 }
 
 
-/* Gap Classes */
+/**************************************
+*
+* Gap Classes
+*
+***************************************/
+
 .gap-8 {
     gap: 8px;
 }
@@ -100,7 +115,7 @@
     gap: 32px;
 }
 
-.gap-32-m {
+.gap-dmd-32 {
     @include media-breakpoint-down(md) {
         gap: 32px;
     }

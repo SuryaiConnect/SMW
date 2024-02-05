@@ -1,0 +1,51 @@
+.smw-pagination{
+    padding: 88px 0px;
+    @include media-breakpoint-down(md) {
+        padding: 44px 0px 88px 0px;
+    }
+    &-btn{
+        border: 1px solid $primary-color-1;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__left, &__right{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .smw-btn-text{
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; 
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        &:hover{
+            background-color: $white-color-3;
+        }
+        &.active{
+            background-color: $white-color-3;
+        }
+    }
+    .smw-icon-button-left{
+        &::before{
+            font-size: 45px;
+            color: $primary-color-1; 
+        }
+    }
+    .smw-icon-button-right{
+        &::before{
+            font-size: 45px;
+            color: $primary-color-1; 
+        }
+    }
+}
