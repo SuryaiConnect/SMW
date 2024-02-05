@@ -17,6 +17,22 @@
             }
         }
     }
+    &.bottom-curve-light{
+        &:after{
+            content:'';
+            position: absolute;
+            height: 57px;
+            width: 100%;
+            left: 0px;
+            bottom: -56px;
+            background: url('./../images/curve-bottom-light.svg') center 0% no-repeat;
+            background-size: 100%;
+            @include media-breakpoint-up(xxl) {
+                background-size: cover;
+                height: 80px;
+            }
+        }
+    }
     &.with-bg {
         background-color: $white-color-3;
     }

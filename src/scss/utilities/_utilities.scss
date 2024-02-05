@@ -28,7 +28,7 @@
 }
 .smw-mt-curve-fixes{
     /* Handling Curve spacing */
-    margin-top: 57px;
+    margin-top: 50px;
     @include media-breakpoint-up(xxl) {
         margin-top: 80px;
     }
@@ -50,6 +50,9 @@
     padding: 16px 0px;
 }
 
+.smw-pt-16 {
+    padding-top: 16px;
+}
 .smw-pb-16 {
     padding-bottom: 16px;
 }
