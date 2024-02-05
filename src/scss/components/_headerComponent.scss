@@ -79,7 +79,7 @@
     &.with-transperent{
         background-color: transparent;
         @include media-breakpoint-down(lg) { 
-            background-color: $primary-color-1; 
+            background-color: $primary-color-2; 
         }
     }    
     &__right{
