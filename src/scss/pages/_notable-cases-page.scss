@@ -4,5 +4,12 @@
         @include media-breakpoint-down(md) {
             margin-top: -98px;
         }
+        .featuredCard{
+            &:hover{
+                .link__insight{
+                    gap: 16px;
+                }
+            }
+        }
     }
 }

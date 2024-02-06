@@ -114,6 +114,9 @@
         @include media-breakpoint-down(md) {
             margin: 0 auto 48px auto;
         }
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
     }
     .page-scroll-down{
         cursor: pointer;
