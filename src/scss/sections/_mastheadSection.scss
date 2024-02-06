@@ -1,4 +1,7 @@
-.musthead{
+/*********************************
+* Homepage Masthead
+**********************************/
+.masthead{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -42,7 +45,7 @@
         }
     }
 
-    .musthead__articleWrapper{
+    .masthead__articleWrapper{
         // height: 889px;
         height: 806px; 
         z-index: 2;

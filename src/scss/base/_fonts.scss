@@ -1,4 +1,9 @@
-/* Fonts */
+/**********************************************
+*   Raleway Fonts 
+*   All Raleway fonts you can find:
+*   Path: src/documents/raleway-all-fonts.zip
+***********************************************/
+
 $primary-font-regular: 'raleway';
 @font-face {
     font-family: $primary-font-regular;
@@ -26,9 +31,11 @@ $primary-font-bold: 'raleway-bold';
     font-style: normal; 
 }
 
-/*  All Icons
-    Note: dist/icons.html file have all icons and it's classes
+/*  
+* All Icons
+* Note: dist/icons.html file have all icons and it's classes
 */
+
 $smw-font-icons: 'smwicons';
 @font-face {
   font-family: $smw-font-icons;

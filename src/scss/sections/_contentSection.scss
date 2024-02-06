@@ -1,3 +1,7 @@
+/*********************************
+*   Content Section
+**********************************/
+
 .contentSections-bg {
     background-color: $white-color-3;
 }
@@ -6,15 +10,13 @@
     padding: 88px 0;
     display: flex;
     max-width: 800px;
-    // margin: 0 auto;
 
     @include media-breakpoint-down(lg) {
         flex-direction: column;
     }
 
     .article {
-
-
+        
         &__content {
             display: flex;
             flex-direction: column;

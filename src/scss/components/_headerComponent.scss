@@ -433,8 +433,8 @@
 }
 
 /* Iphone Ios - Submenu components are visible fixes */
-.musthead, .smwHead{
+.masthead, .smwHead{
     @include media-breakpoint-down(lg) {
-        overflow-x: hidden; 
+        overflow: hidden;
     }
 }

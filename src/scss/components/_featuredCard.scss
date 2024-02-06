@@ -1,7 +1,10 @@
+/*********************************
+*   Featured Card
+**********************************/
+
 .featuredCard{
     border-radius: 24px;
     background-color: $secondary-color-1;
-    // border-radius: 24px; 
     &.cyan{
         &:hover{
             background-color: $secondary-color-3;

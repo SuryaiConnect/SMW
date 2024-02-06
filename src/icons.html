@@ -7,10 +7,18 @@
     <title>SMW Icons</title>
     <link href="../dist/vendors/bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../dist/css/styles.min.css" rel="stylesheet">
+    <style>
+        body{
+            font-size: 25px;
+            [class^="smw-icon-"]::before, [class*=" smw-icon-"]::before{
+                font-size: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container text-bg-success">
+    <div class="container text-bg-danger">
         <div class="row">
                 <div class="col-sm-6">
                     <span class="smw-icon-arrow-right-circle"></span>

@@ -1,7 +1,8 @@
+/*********************************
+*   Testimonial Slider  
+**********************************/
 $(document).ready(function(){
-    /* -----------------------------------------
-    Testimonial Slider
-    ----------------------------------------- */
+    
     let $testimonialSlider = $('#testimonialSlider');
     if ($testimonialSlider.length > 0) {
         $('#testimonialSlider').owlCarousel({
@@ -25,4 +26,4 @@ $(document).ready(function(){
             }
         })
     }
-});
+}); 

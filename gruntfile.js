@@ -91,16 +91,16 @@ module.exports = function(grunt){
               src: ['**/*'],
               dest: 'dist/fonts'
             },
-            html:{
-              expand: true,
-              cwd: 'src/',
-              src: ['*.html'],
-              dest: 'dist/',
-              tasks: ['copy:html'],
-              options: {
-                livereload: true  // Enable livereload for HTML changes
-              }
-            },
+            // html:{
+            //   expand: true,
+            //   cwd: 'src/',
+            //   src: ['*.html'],
+            //   dest: 'dist/',
+            //   tasks: ['copy:html'],
+            //   options: {
+            //     livereload: true  
+            //   }
+            // },
             vendors:{
               expand: true,
               cwd: 'src/',

@@ -1,7 +1,9 @@
+/*********************************
+*   Insight Card
+**********************************/
 .insightCard{
     border-radius: 24px 24px 24px 24px;
     .article{
-        border: 1px solid red;
         &__title{
             color: $primary-color-6;
             text-align: center;
