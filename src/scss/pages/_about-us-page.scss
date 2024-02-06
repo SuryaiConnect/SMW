@@ -12,6 +12,14 @@
         }
     }
 
+    &.card-section{
+        .article{
+            &__content{
+                margin-bottom: 0px; 
+            }
+        }
+    }
+
     &.meetourTeam{
         @include media-breakpoint-down(md) {
             padding: 0px 0px 88px 0;
