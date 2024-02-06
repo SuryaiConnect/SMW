@@ -32,10 +32,10 @@
                     z-index: -1;
                 }
                 &::before{
-                    left: 100%;
+                    left: -100%;
                 }
                 &::after{
-                    right: 100%;
+                    right: -100%;
                 }
             }
         }

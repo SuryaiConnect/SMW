@@ -1,0 +1,8 @@
+.notable-cases-page{
+    &.featuredCardWrapper{
+        margin-top: -70px; 
+        @include media-breakpoint-down(md) {
+            margin-top: -98px;
+        }
+    }
+}

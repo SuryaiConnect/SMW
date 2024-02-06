@@ -13,6 +13,7 @@
         }
     }
     &-link{
+        border: 1px solid transparent;
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -36,6 +37,9 @@
         .smw-icon-home{
             &::before{
                 color: $white-color-1;
+                position: relative;
+                top: -1px;
+                font-size: 18px;
             }
         }
         .smw-breadcrumb-link{

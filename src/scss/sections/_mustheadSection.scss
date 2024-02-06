@@ -4,7 +4,7 @@
     width: 100%;
     position: relative;
     @include media-breakpoint-down(lg) {
-        background-position: right top;
+        background-position: right top; 
      }
     &::before{
         content: '';
@@ -65,8 +65,13 @@
         max-width: 737px;   
         &-title{
             color: $white-color-1;
-            line-height: 52px;
-            max-width: 600px;
+
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 52px; /* 118.182% */
+            letter-spacing: -0.44px;
+
             @include media-breakpoint-down(md) {
                 max-width: 100%;
                 font-size: 32px;
@@ -77,6 +82,8 @@
         &-content{
             color: $white-color-1;
             font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
             margin-bottom: 94px;
             line-height: 28px; /* 140% */
             letter-spacing: -0.02px;
@@ -94,6 +101,11 @@
             letter-spacing: 1.246px;
             text-transform: uppercase;
             margin-bottom: 16px;
+
+            font-size: 14px;
+            font-style: normal;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 1.246px;
         }
     }
     .button__blue{

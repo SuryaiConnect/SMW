@@ -49,7 +49,7 @@
         @include media-breakpoint-up(md) {
             margin-bottom: 72px;
         }
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(lg) {
             padding: 0 32px;
         }
        &__title{
@@ -62,7 +62,7 @@
             @include media-breakpoint-down(md) {
                 margin: 32px 0;  
             }
-        } 
+        }        
     }
     .casesCard{
         border: 1px solid $white-color-1;

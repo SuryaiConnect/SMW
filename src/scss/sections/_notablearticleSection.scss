@@ -27,6 +27,27 @@
                     letter-spacing: -0.016px;
                 }
             }
+            .smw-icon-calendar{
+                :before{
+                    font-size: 19px; 
+                } 
+            }
+        }
+        .peopleCard {
+            .link__people-text{
+                color: $secondary-color-1;
+
+                /* Button Text */
+                font-family: $primary-font-regular;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: -0.014px;
+            }
+            .button__blue {
+                max-width: 245px;
+            }
         }
     }
 }
