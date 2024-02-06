@@ -1,0 +1,28 @@
+.about-us-page{
+    &.contentSections{
+        @include media-breakpoint-down(md) {
+            padding: 43px 0px 88px 0px;
+        }
+        .article{
+            &__title{
+                @include media-breakpoint-down(md) {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    &.card-section{
+        .article{
+            &__content{
+                margin-bottom: 0px; 
+            }
+        }
+    }
+
+    &.meetourTeam{
+        @include media-breakpoint-down(md) {
+            padding: 0px 0px 88px 0;
+        }
+    }
+}

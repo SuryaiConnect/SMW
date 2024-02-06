@@ -26,8 +26,9 @@
                     height: 52px;
                     border-radius: 50%;
                     margin: 0px 12px;
+                    transition: all 0.3s ease-out;
                     &:hover{
-                        background: transparent;
+                            background-color: $white-color-3;
                     }
                     .smw-icon-button-right, .smw-icon-button-left{
                         &::before{

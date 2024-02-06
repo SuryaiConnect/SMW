@@ -1,6 +1,15 @@
 .featuredCard{
     border-radius: 24px;
     background-color: $secondary-color-1;
+    // border-radius: 24px; 
+    &.cyan{
+        &:hover{
+            background-color: $secondary-color-3;
+            .smw-btn-text{
+                text-decoration: underline;
+            } 
+        }
+    }
     @include media-breakpoint-down(md) {
         margin-bottom: 30px;
     }

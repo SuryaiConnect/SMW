@@ -12,6 +12,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease-out;
+        &:hover{
+            background-color: $white-color-3;
+        }
     }
     &__left, &__right{
         display: flex;

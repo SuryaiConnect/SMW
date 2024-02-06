@@ -3,6 +3,9 @@
     &.with-bg-curve{
         background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
     }
+    @include media-breakpoint-down(md) {
+        padding: 72px 0; 
+    }
 
     &__gap {
         @include media-breakpoint-down(md) {

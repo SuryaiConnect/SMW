@@ -26,6 +26,10 @@
 .rectangle{
     padding-top: 70px;
     position: relative;
+    min-height: 212px;
+    @include media-breakpoint-down(md) {
+        padding-top: 43px;
+    }
     &::before{
         content: '';
         left: 0px;
@@ -35,6 +39,29 @@
         position: absolute;
         z-index: -1;
         background-color: $primary-color-2;
+    }
+    &__title{
+        @include media-breakpoint-down(md) {
+            font-size: 32px; 
+        }
+    }
+    &.with-bottom-curve{
+        &::after{
+            content:'';
+            position: absolute;
+            height: 57px;
+            width: 100%;
+            left: 0px;
+            bottom: -56px;
+            background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
+            background-size: 100%;
+            z-index: -1;
+            @include media-breakpoint-up(xxl) {
+                background-size: cover;
+                height: 80px;
+            }
+        }
+        
     }
 }
 
@@ -55,6 +82,12 @@
             background-size: cover;
             height: 80px;
             bottom: -80px;
+        }
+        @include media-breakpoint-down(md) {
+            background: url('./../images/breadcrumb-primary-mobile-curve.svg') 0% 100% no-repeat;
+            background-size: 100%;
+            bottom: -46px;
+            height: 47px;
         }
     }
 }
