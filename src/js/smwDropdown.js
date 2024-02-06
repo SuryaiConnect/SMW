@@ -1,3 +1,6 @@
+/*********************************
+*   Filter Dropdown  
+**********************************/
 $(document).ready(function() {
     $('.smwFilter .dropdown-menu a').on('click', function(){
         var selectedText = $(this).text();

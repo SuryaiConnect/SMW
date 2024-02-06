@@ -1,7 +1,7 @@
+/*********************************
+*   Notable Cases Slider
+**********************************/
 $(document).ready(function(){
-    /* -----------------------------------------
-    Notable Cases Slider
-    ----------------------------------------- */
 
     let $notableCasesSlider = $('#notableCasesSlider');
     if ($notableCasesSlider.length > 0) {

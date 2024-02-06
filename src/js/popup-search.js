@@ -1,3 +1,6 @@
+/*********************************
+*   Search Popup
+**********************************/
 $(document).ready(function(){
     const bodyEl = document.getElementsByTagName("body")[0];
     const backdrop = document.createElement('div');

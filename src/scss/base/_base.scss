@@ -1,3 +1,6 @@
+/***************************************
+* All Element Padding margin set to Zero
+****************************************/
 *,
 *::after,
 *::before {
@@ -11,12 +14,7 @@ html {
 body{
     font-family: $primary-font-regular;
     box-sizing: border-box;
-    overflow-x: hidden;
-    /* Iphone Fixes */
-    touch-action: manipulation; /* This property may help prevent double-tap zooming on some browsers */
-    -webkit-text-size-adjust: none; /* Prevent text size adjustment on orientation change */
-
-    
+    overflow-x: hidden; 
 }
 
 .smw-container{   

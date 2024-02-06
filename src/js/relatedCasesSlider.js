@@ -1,8 +1,7 @@
+/*********************************
+*   Related Case Slider
+**********************************/
 $(document).ready(function(){
-    /* -----------------------------------------
-    Related Cases Slider
-    ----------------------------------------- */
-
     let $relatedCasesSlider = $('#relatedCasesSlider');
     if ($relatedCasesSlider.length > 0) {
         $('#relatedCasesSlider').owlCarousel({

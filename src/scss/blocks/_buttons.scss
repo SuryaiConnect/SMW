@@ -1,4 +1,6 @@
-/* All Buttons */
+/*********************************
+*  Buttons
+**********************************/
 .button{
     &__blue{
         color: $white-color-1;
@@ -42,8 +44,6 @@
     }
     &__translate{
         color: $white-color-1;
-        // leading-trim: both;
-        // text-edge: cap;
         font-size: 1.4rem;
         font-style: normal;
         font-weight: 600;

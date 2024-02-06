@@ -17,7 +17,7 @@ $white-color-2: #F1F5FB;
 $white-color-3: #DBEAF9;
 $white-color-4: #F5F5F5;
 
-/* Break Points */
+/* Bootstrap Break Points */
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -25,5 +25,5 @@ $grid-breakpoints: (
     lg: 992px,
     xl: 1200px,
     xxl: 1400px,
-    vxl: 1515px
+    vxl: 1515px // Newly Added Very Large 
 );

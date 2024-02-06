@@ -1,9 +1,8 @@
+/*********************************
+*   Insight Slider
+**********************************/
+
 $(document).ready(function(){
-
-    /* -----------------------------------------
-    Insight Slider
-    ----------------------------------------- */
-
     let $insightSlider = $('#insightSlider');
     if ($insightSlider.length > 0) {
         if ($(window).width() < 991) {

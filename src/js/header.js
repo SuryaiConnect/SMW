@@ -1,3 +1,6 @@
+/*********************************
+*   Main Navigation 
+**********************************/
 $(document).ready(function(){
     /* Close Menu */
     function closeMenu(){

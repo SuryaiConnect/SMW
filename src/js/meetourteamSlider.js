@@ -1,9 +1,7 @@
+/*********************************
+*   Meet Our Team Slider
+**********************************/
 $(document).ready(function(){
-
-    /* -----------------------------------------
-    Meet Our Team Slider
-    ----------------------------------------- */
-
     let $meetourTeamSlider = $('#meetourTeamSlider');
     if ($meetourTeamSlider.length > 0) {
         $('#meetourTeamSlider').owlCarousel({

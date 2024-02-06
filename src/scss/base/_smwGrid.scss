@@ -1,13 +1,15 @@
+/*********************************
+*   SMW-Grid - Custom Gap
+**********************************/
+
 /**
 *
-*   
 * $custom-gap: 32px; // Your desired gap value in pixels
 * $base-font-size: 16px; // Bootstrap default base font size
 * .custom-gap-in-rem {
 *   margin-right: $custom-gap / $base-font-size + rem;
 *  }
 */
-
 
 @mixin dynamic-gap($gap) {
     gap: $gap;
