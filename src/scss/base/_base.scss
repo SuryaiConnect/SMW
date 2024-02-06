@@ -20,7 +20,8 @@ body{
         max-width: 1214px;
         margin: 0 auto;
     }
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
+        max-width: 1214px;
         padding: 0 32px;
     }
 }

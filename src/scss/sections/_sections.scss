@@ -1,8 +1,5 @@
 .card-section {
-    padding: 88px 0;
-    &.with-bg-curve{
-        background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
-    }
+    padding: 88px 0;    
     @include media-breakpoint-down(md) {
         padding: 72px 0; 
     }

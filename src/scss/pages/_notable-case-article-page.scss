@@ -1,0 +1,18 @@
+.notable-case-article-page{
+    &.requestSections  {
+        &.bottom-curve-light{
+            @include media-breakpoint-down(md) {
+                &::after{
+                    height: 0px; 
+                }
+            }
+        }
+    }
+    &.relatedCases{
+        &.smw-mt-curve-fixes{
+                    @include media-breakpoint-down(md) {
+                    margin-top: 0px;
+            }
+        }
+    }
+}
