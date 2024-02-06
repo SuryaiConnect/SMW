@@ -431,3 +431,10 @@
         }
     }
 }
+
+/* Iphone Ios - Submenu components are visible fixes */
+.musthead, .smwHead{
+    @include media-breakpoint-down(lg) {
+        overflow-x: hidden; 
+    }
+}
