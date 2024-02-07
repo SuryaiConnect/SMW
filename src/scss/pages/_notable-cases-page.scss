@@ -15,4 +15,11 @@
             }
         }
     }
+    &.smwFilter{
+        .smw-icon-down-arrow{
+            &::before{
+                color: $secondary-color-1;
+            }
+        }
+    }
 }
