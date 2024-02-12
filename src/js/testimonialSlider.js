@@ -21,7 +21,8 @@ $(document).ready(function(){
                     nav:true,
                 },
                 1000:{
-                    items:1
+                    items:1,
+                    nav:true,
                 }
             }
         })
