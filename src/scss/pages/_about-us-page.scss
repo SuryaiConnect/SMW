@@ -1,50 +1,29 @@
 /*********************************
 *  About Us Page
 **********************************/
-.about-us-page{
-    &.contentSections{
-        @include media-breakpoint-down(md) {
-            padding: 43px 0px 88px 0px;
-        }
-        .article{
-            &__title{
-                @include media-breakpoint-down(md) {
-                    font-size: 32px;
-                }
-            }
-            &__content{
-                color: $primary-color-3;
-
-                    /* Para Text Large */
-                    font-family: $primary-font-regular;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px; /* 136.364% */
-                    letter-spacing: -0.022px;
-            }
-        }
-    }
-
-    &.meetourTeam{
+.about-us-page {
+    &.meetourTeam {
         @include media-breakpoint-down(md) {
             padding: 0px 0px 88px 0;
         }
     }
 
-    &.card-section{
+    &.card-section {
         padding: 88px 0px;
         background-color: $white-color-2;
-        &.with-bg-curve{
-            background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
+
+        &.with-bg-curve {
+            background: url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat, url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
             background-color: $white-color-2;
         }
     }
-    &.testimonialSection{
-        &::before{
+
+    &.testimonialSection {
+        &::before {
             background-color: $white-color-2;
         }
-        &:after{
+
+        &:after {
             background-color: $white-color-2;
         }
     }

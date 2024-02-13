@@ -2,16 +2,17 @@
 *   Masthead Internal pages
 *********************************/
 
-.banner{
+.banner {
     height: 362px;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
     position: relative;
+
     /* Banner bottom curve*/
-    &.substract{
-        &:before{
-            content:'';
+    &.substract {
+        &:before {
+            content: '';
             position: absolute;
             height: 57px;
             width: 100%;
@@ -19,22 +20,25 @@
             bottom: -2px;
             background: url('./../images/substract.svg') center 100% no-repeat;
             background-size: 100%;
+
             @include media-breakpoint-up(xxl) {
                 background-size: cover;
                 height: 80px;
             }
         }
     }
-} 
+}
 
-.rectangle{
+.rectangle {
     padding-top: 70px;
     position: relative;
     min-height: 212px;
+
     @include media-breakpoint-down(md) {
         padding-top: 43px;
     }
-    &::before{
+
+    &::before {
         content: '';
         left: 0px;
         top: 0px;
@@ -44,14 +48,16 @@
         z-index: -1;
         background-color: $primary-color-2;
     }
-    &__title{
+
+    &__title {
         @include media-breakpoint-down(md) {
-            font-size: 32px; 
+            font-size: 32px;
         }
     }
-    &.with-bottom-curve{
-        &::after{
-            content:'';
+
+    &.with-bottom-curve {
+        &::after {
+            content: '';
             position: absolute;
             height: 57px;
             width: 100%;
@@ -60,20 +66,22 @@
             background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
             background-size: 100%;
             z-index: -1;
+
             @include media-breakpoint-up(xxl) {
                 background-size: cover;
                 height: 80px;
             }
         }
-        
+
     }
 }
 
 /* Breadcrumb bottom curve */
-.breadcrumb-curve{
+.breadcrumb-curve {
     position: relative;
-    &:before{
-        content:'';
+
+    &:before {
+        content: '';
         position: absolute;
         height: 57px;
         width: 100%;
@@ -82,16 +90,47 @@
         background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
         background-size: 100%;
         z-index: 1;
+
         @include media-breakpoint-up(vxl) {
             background-size: cover;
             height: 80px;
             bottom: -80px;
         }
+
         @include media-breakpoint-down(md) {
             background: url('./../images/breadcrumb-primary-mobile-curve.svg') 0% 100% no-repeat;
             background-size: 100%;
             bottom: -46px;
             height: 47px;
+        }
+    }
+}
+
+.banner-content {
+    &.contentSections {
+        @include media-breakpoint-down(md) {
+            padding: 48px 0px 88px 0px;
+        }
+
+        .article {
+            &__title {
+                @include media-breakpoint-down(md) {
+                    font-size: 32px;
+                }
+            }
+
+            &__content {
+                color: $primary-color-3;
+
+                /* Para Text Large */
+                font-family: $primary-font-regular;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                /* 136.364% */
+                letter-spacing: -0.022px;
+            }
         }
     }
 }

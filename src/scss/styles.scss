@@ -55,9 +55,16 @@
 @import 'sections/filterSection';
 @import 'sections/relatedCasesSection';
 @import 'sections/notablearticleSection';
+@import 'sections/accordian';
 
 
 // Pages
+@import 'pages/homepage';
 @import 'pages/about-us-page';
 @import 'pages/notable-cases-page';
-@import 'pages/notable-case-article-page'; 
+@import 'pages/notable-case-article-page';
+@import 'pages/careers-page';
+@import 'pages/pricing-funding-page';
+@import 'pages/expertise-page';
+@import 'pages/paralegal-team';
+@import 'pages/our-people';

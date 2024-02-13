@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Sections</title>
-    <!-- <link href="vendors/bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="../dist/css/styles.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../dist/images/favicon.png">
+    <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.theme.default.css" rel="stylesheet">
+    <link type="text/css" href="../dist/css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,6 +19,118 @@
             </div>
         </div>
     </div>
+    <!-- Accordian Section -->
+    <section class="accordian">
+        <div class="container-fluid container-lg">
+            <div class="row">
+                <h2 class="accordian__title">Current vacancies</h2>
+            </div>
+            <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button d-flex justify-content-between smart-animation"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <span> Job title </span>
+                                <i class="smw-icon-right-arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque faucibus justo nec est faucibus vulputate. Aliquam non quam eget nunc porta
+                                pulvinar. Quisque venenatis feugiat purus. Proin vitae molestie lacus, sit amet
+                                consectetur arcu. Morbi facilisis velit sodales erat efficitur eleifend vel non erat. Ut
+                                ut dolor commodo, fermentum neque nec, ultricies tortor. Sed eget pulvinar dui, ac
+                                imperdiet augue. Maecenas a gravida ipsum, et ullamcorper eros. Sed faucibus ipsum sit
+                                amet justo malesuada malesuada.
+                            </div>
+                            <div class="accordian-footer">
+                                <button class="smw-btn-text d-flex gap-8 align-items-center smart-animation">
+                                    <span>Apply for this position</span>
+                                    <span class="smw-icon-right-arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <span> Job title </span>
+                                <i class="smw-icon-right-arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque faucibus justo nec est faucibus vulputate. Aliquam non quam eget nunc porta
+                                pulvinar. Quisque venenatis feugiat purus. Proin vitae molestie lacus, sit amet
+                                consectetur arcu. Morbi facilisis velit sodales erat efficitur eleifend vel non erat. Ut
+                                ut dolor commodo, fermentum neque nec, ultricies tortor. Sed eget pulvinar dui, ac
+                                imperdiet augue. Maecenas a gravida ipsum, et ullamcorper eros. Sed faucibus ipsum sit
+                                amet justo malesuada malesuada.
+                            </div>
+                            <div class="accordian-footer">
+                                <button class="smw-btn-text d-flex gap-8 align-items-center smart-animation">
+                                    <span>Apply for this position</span>
+                                    <span class="smw-icon-right-arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <span> Job title </span>
+                                <i class="smw-icon-right-arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque faucibus justo nec est faucibus vulputate. Aliquam non quam eget nunc porta
+                                pulvinar. Quisque venenatis feugiat purus. Proin vitae molestie lacus, sit amet
+                                consectetur arcu. Morbi facilisis velit sodales erat efficitur eleifend vel non erat. Ut
+                                ut dolor commodo, fermentum neque nec, ultricies tortor. Sed eget pulvinar dui, ac
+                                imperdiet augue. Maecenas a gravida ipsum, et ullamcorper eros. Sed faucibus ipsum sit
+                                amet justo malesuada malesuada.
+                            </div>
+                            <div class="accordian-footer">
+                                <button class="smw-btn-text d-flex gap-8 align-items-center smart-animation">
+                                    <span>Apply for this position</span>
+                                    <span class="smw-icon-right-arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <article class="article">
+                    <div class="article__title">
+                        <h3 class="article__title-text">Job title</h3>
+                        <img class="article__title-icon" src="" alt="">
+                    </div>
+                    <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        faucibus justo nec est faucibus vulputate. Aliquam non quam eget nunc porta pulvinar. Quisque
+                        venenatis feugiat purus. Proin vitae molestie lacus, sit amet consectetur arcu.
+                        Morbi facilisis velit sodales erat efficitur eleifend vel non erat. Ut ut dolor commodo,
+                        fermentum neque nec, ultricies tortor. Sed eget pulvinar dui, ac imperdiet augue. Maecenas a
+                        gravida ipsum, et ullamcorper eros. Sed faucibus ipsum sit amet justo malesuada malesuada.
+                    </p>
+                    <a href="#" class="button__translate-txt">Apply for this position</a>
+                </article> -->
+            </div>
+        </div>
+    </section>
+    <!-- Accordian Section -->
+
+
     <!-- Tow columns card section -->
     <section class="card-section">
         <div class="container">
@@ -344,15 +458,20 @@
                             <div class="col-sm-12">
                                 <article class="arrestHelpline text-center">
                                     <h1 class="arrestHelpline__title">Arrest helpline</h1>
-                                    <p class="arrestHelpline__content">We’re here for you 24/7 so if you, or someone you know, have been arrested,
-                                        give us a call straight away. The sooner one of our defence solicitors get to work, the
-                                        better it will be for you. Although based in London, we’ll get to you wherever you are.</p>
-                                    <p class="d-flex gap-8 align-items-center justify-content-center"><span class="smw-icon-phone"></span><span class="smw-phone">020 7481 9157</span></p>
+                                    <p class="arrestHelpline__content">We’re here for you 24/7 so if you, or someone you
+                                        know, have been arrested,
+                                        give us a call straight away. The sooner one of our defence solicitors get to
+                                        work, the
+                                        better it will be for you. Although based in London, we’ll get to you wherever
+                                        you are.</p>
+                                    <p class="d-flex gap-8 align-items-center justify-content-center"><span
+                                            class="smw-icon-phone"></span><span class="smw-phone">020 7481 9157</span>
+                                    </p>
                                 </article>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div><!--Arrest Helpline -->
@@ -367,35 +486,37 @@
                     <div class="dropdownWrapper">
                         <p class="smw-btn-text smw-mb-8">Filter by expertise</p>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle smwdropdown d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle smwdropdown d-flex align-items-center" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="smwdropdown__text">Show all </span>
                                 <i class="smw-icon-down-arrow"></i>
                             </button>
                             <ul class="dropdown-menu smwdropdown__options">
-                              <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Assault (select to filter)</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Assault (select to filter)</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="dropdownWrapper">
                         <p class="smw-btn-text smw-mb-8">Filter by author</p>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle smwdropdown d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle smwdropdown d-flex align-items-center" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="smwdropdown__text">Show all </span>
                                 <i class="smw-icon-down-arrow"></i>
                             </button>
                             <ul class="dropdown-menu smwdropdown__options">
-                              <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
-                              <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
                             </ul>
                         </div>
                     </div>
@@ -403,7 +524,207 @@
             </div>
         </div>
     </div> <!-- Filter Dropdown -->
+
+    <div class="notableCasesSection my-5">
+        <div class="container-fluid container-lg smw-container">
+            <div class="row justify-content-between row-gap">
+                <div class="col-sm-12">
+                    <article class="article">
+                            <div class="article__leftCont">
+                                <h1 class="article__title">Notable Cases</h1>
+                                <p class="article__content">Lorem ipsum dolor sit amet consectetur. Amet suspendisse
+                                    pellentesque ultricies sem vitae vehicula. Nulla pulvinar morbi nisl dictumst a. Sit felis
+                                    magna consequat purus ut lacus purus. </p>
+                            </div>
+                            <!-- <button class="button__blue d-flex gap-8 align-items-center smart-animation d-none d-lg-flex"><span>View all of {Team member name}’s notable cases</span><span class="smw-icon-right-arrow"></span></button> -->
+                    </article>
+                </div>
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme notableCasesSlider">
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="button__blue d-flex gap-8 align-items-center smart-animation"><span>Related cases</span><span class="smw-icon-right-arrow"></span></button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Notable Cases Section 1-->
+    <div class="notableCasesSection">
+        <div class="container-fluid container-lg smw-container">
+            <div class="row justify-content-between row-gap">
+                <div class="col-sm-12">
+                    <article class="article">
+                            <div class="article__leftCont">
+                                <h1 class="article__title">Notable Cases</h1>
+                                <p class="article__content">Lorem ipsum dolor sit amet consectetur. Amet suspendisse
+                                    pellentesque ultricies sem vitae vehicula. Nulla pulvinar morbi nisl dictumst a. Sit felis
+                                    magna consequat purus ut lacus purus. </p>
+                            </div>
+                            <button class="button__blue d-flex gap-8 align-items-center smart-animation d-none d-lg-flex"><span>View all of {Team member name}’s notable cases</span><span class="smw-icon-right-arrow"></span></button>
+                    </article>
+                </div>
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme notableCasesSlider">
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="caseItem">
+                            <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                <div class="casesCard__imgWrap">
+                                    <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                        height="52">
+                                </div>
+                                <p class="d-flex gap-8 align-items-center">
+                                    <span class="smw-icon-calendar"></span>
+                                    <span class="casesCard__date">Date Posted</span>
+                                </p>
+                                <div>
+                                    <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        pellentesque?</h2>
+                                    <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                        vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                </div>
+                                <p class="link__insight">
+                                    <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 d-lg-none">
+                    <button class="button__blue gap-8 align-items-center smart-animation d-flex"><span>View all of {Team member name}’s notable cases</span><span class="smw-icon-right-arrow"></span></button>
+                    <!-- <button class="button__blue d-flex gap-8 align-items-center smart-animation"><span>Related cases</span><span class="smw-icon-right-arrow"></span></button> -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- Notable Cases Section 2 -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../dist/vendors/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/vendors/owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="../dist/js/scripts.min.js"></script>
 </body>
 

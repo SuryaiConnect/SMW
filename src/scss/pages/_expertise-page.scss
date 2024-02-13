@@ -1,0 +1,20 @@
+.expertisepage{
+    &.notableCasesSection{
+        &:after{
+            content:'';
+            position: absolute;
+            height: 57px;
+            width: 100%;
+            left: 0px;
+            bottom: -56px;
+            background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
+            background-size: 100%;
+            z-index: 1;
+            @include media-breakpoint-up(xxl) {
+                background-size: cover;
+                height: 80px;
+                bottom: -80px;
+            }
+        }
+    }
+}

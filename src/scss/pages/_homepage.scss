@@ -1,0 +1,62 @@
+.homepage{
+    &.notableCasesSection{
+        padding: 158px 0px 88px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 88px 0px 88px 0px;
+        }
+        &:after{
+            content:'';
+            position: absolute;
+            height: 57px;
+            width: 100%;
+            left: 0px;
+            bottom: -56px;
+            background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
+            background-size: 100%;
+            z-index: 1;
+            @include media-breakpoint-up(xxl) {
+                background-size: cover;
+                height: 80px;
+                bottom: -80px;
+            }
+        }
+        .article{
+            @include media-breakpoint-down(lg) {
+                padding: 0 32px; 
+            }
+            &__title{
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 24px;
+                }
+            }
+            &__content{
+                max-width: 720px;
+            }
+            .button__outline{
+                @include media-breakpoint-down(md) {
+                    margin: 32px 0 0 0;  
+                }
+            }        
+        }
+        .smw-row{
+            @include dynamic-gap(32px);
+            @include media-breakpoint-down(md) {
+                padding: 0px 32px;
+            }
+            .col{
+                flex: 1 0 auto;
+            }    
+        }
+        .caseItem{
+            text-decoration: none;
+        }
+        .owl-nav{
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+        .notableCasesSlider .owl-dots {
+            margin: 24px 0 0 0;
+        }
+    }
+}
