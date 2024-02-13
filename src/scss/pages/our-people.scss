@@ -1,0 +1,11 @@
+.ourPeople-page {
+    .contentSections {
+        padding: 126px 0 88px;
+    }
+
+    .testimonialSection {
+        &::before {
+            background-color: $white-color-3;
+        }
+    }
+}
