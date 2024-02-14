@@ -1,0 +1,72 @@
+.relatedExpertise{
+    padding: 88px 0px;
+    background-color: $white-color-3;
+
+    &__heading{
+        margin-bottom: 64px; 
+        color: $primary-color-1;
+    
+        /* H2 */
+        font-family: $primary-font-regular;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; /* 113.333% */
+        letter-spacing: -0.3px;
+
+    }
+
+    .relatedExpertiseSlider{
+        &.owl-carousel{
+            .owl-nav{
+                margin-top: 64px;
+                button.owl-next,
+                button.owl-prev{
+                    border: 1px solid $primary-color-1; 
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    margin: 0px 12px;
+                    transition: all 0.3s ease-out;
+                    &:hover{
+                        background-color: $white-color-3;
+                    }
+                    .smw-icon-button-right, .smw-icon-button-left{
+                        &::before{
+                            color: $primary-color-1;
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &__title{
+            color: $primary-color-1;
+
+            /* H3 */
+            font-family: $primary-font-regular;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px; /* 118.182% */
+            letter-spacing: -0.22px;
+        }
+        &__content{
+            color:  $primary-color-1;
+
+            /* Paragraph Text */
+            font-family: $primary-font-regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.016px;
+        }
+    }
+
+}
