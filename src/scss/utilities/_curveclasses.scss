@@ -22,7 +22,47 @@
     }
 }
 
+/* Banner bottom curve*/
+.substract-bottom-white-3-curve {
+    &:before {
+        content: '';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        bottom: -2px;
+        background: url('./../images/substract.svg') center 100% no-repeat;
+        background-size: 100%;
+
+        @include media-breakpoint-up(xxl) {
+            background-size: cover;
+            height: 80px;
+        }
+    }
+}
+
+.primary-curve-top{
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        top: -56px;
+        background: url('./../images/curve-primary-top.svg') center 100% no-repeat;
+        background-size: 100%;
+
+        @include media-breakpoint-up(xxl) {
+            background-size: cover;
+            height: 80px;
+            top: -80px;
+        }
+    }
+}
+
 .primary-curve-bottom{
+    position: relative;
     &:after{
         content:'';
         position: absolute;
@@ -81,3 +121,70 @@
         }
     }
 }
+
+.white-3-curve-top{
+    position: relative;
+    &:before{
+        content:'';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        top: -56px;
+        background: url('./../images/curve-top-light.svg') center 100% no-repeat;
+        background-size: 100%;
+        @include media-breakpoint-up(xxl) {
+            background-size: cover;
+            height: 80px;
+        }
+    }
+}
+
+.white-3-curve-bottom{
+    position: relative;
+    &:after{
+        content:'';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        bottom: -56px;
+        background: url('./../images/curve-bottom-light.svg') center 0% no-repeat;
+        background-size: 100%;
+        @include media-breakpoint-up(xxl) {
+            background-size: cover;
+            height: 80px;
+        }
+    }
+}
+
+/* Breadcrumb bottom curve */
+.breadcrumb-curve {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        bottom: -57px;
+        background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
+        background-size: 100%;
+        z-index: 1;
+
+        @include media-breakpoint-up(vxl) {
+            background-size: cover;
+            height: 80px;
+            bottom: -80px;
+        }
+
+        @include media-breakpoint-down(md) {
+            background: url('./../images/breadcrumb-primary-mobile-curve.svg') 0% 100% no-repeat;
+            background-size: 100%;
+            bottom: -46px;
+            height: 47px;
+        }
+    }
+}
+
