@@ -14,11 +14,45 @@
         padding: 48px;
         border-radius: 24px;
         display: flex;
+        justify-content: space-between;
         max-width: 800px;
-        gap: 88px;
         margin: 0 auto;
+        @include media-breakpoint-up(lg) {
+            gap: 88px;
+        }
+        &__caption{
+            color: $white-color-1;
 
-        @include media-breakpoint-down(lg) {
+            /* Paragraph Text Extra Small */
+            font-family: $primary-font-regular;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 166.667% */
+            letter-spacing: 1.068px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        &__title{
+            color: $white-color-1;
+
+            /* H2 */
+            font-family: $primary-font-regular;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px; /* 113.333% */
+            letter-spacing: -0.3px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px; /* 133.333% */
+                letter-spacing: -0.018px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
             flex-direction: column;
             padding: 40px;
             gap: 32px;
@@ -26,40 +60,12 @@
         }
 
         &__content {
-            max-width: 425px;
-            align-items: center;
-
-            &-title {
-                color: $white-color-1;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 20px;
-                letter-spacing: 1.068px;
-                text-transform: uppercase;
-                margin-bottom: 16px;
-
-                @include media-breakpoint-down(sm) {
-                    text-align: center;
-                }
+            @include media-breakpoint-up(md) {
+                align-items: center;
+                max-width: 425px;
             }
-
-            &-content {
-                color: $white-color-1;
-                font-family: Raleway;
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 34px;
-                letter-spacing: -0.3px;
-
-                @include media-breakpoint-down(md) {
-                    text-align: center;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: -0.018px;
-                }
+            @include media-breakpoint-down(md) {
+                text-align: center;
             }
         }
 
@@ -86,19 +92,52 @@
         border-radius: 24px;
         display: flex;
         max-width: 800px;
-        gap: 88px;
+        justify-content: space-between;
         margin: 0 auto;
+        @include media-breakpoint-up(lg) {
+            gap: 88px;
+        }
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             flex-direction: column;
             padding: 40px;
             gap: 32px;
             align-items: center;
         }
 
+        &__title{
+            color: $white-color-1;
+
+            /* H2 */
+            font-family: $primary-font-regular;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px; /* 113.333% */
+            letter-spacing: -0.3px;
+            margin-bottom: 16px;
+        }
+
+        &__text{
+            color: $white-color-1;
+
+            /* Paragraph Text */
+            font-family: $primary-font-regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.016px;
+        }
+
         &__content {
-            max-width: 425px;
-            align-items: center;
+            @include media-breakpoint-up(md) {
+                align-items: center;
+                max-width: 425px;
+            }
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
         }
 
         &__contact {
