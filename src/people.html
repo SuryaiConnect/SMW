@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>SMW Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SMW People</title>
     <link rel="icon" type="image/x-icon" href="../dist/images/favicon.png">
     <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.theme.default.css" rel="stylesheet">
@@ -13,9 +13,9 @@
 
 <body>
     <div class="wrapper">
-        <div class="masthead substract-bottom-white-curve" style="background-image: url('./images/demo.jpg');">
+        <div class="smwHead">
             <div class="mainNavContainer">
-                <header class="m-header with-transperent d-flex d-lg-none">
+                <header class="m-header d-flex d-lg-none">
                     <div class="d-flex justify-content-between align-self-stretch">
                         <a href="index.html">
                             <img src="./images/smw-logo.svg" alt="SMW Logo" width="117" height="95">
@@ -23,22 +23,20 @@
                         <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
                             <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
                                         class="smw-icon-search"></span></a></li>
-                            <li class="m-burger" id="m-burger">
-                                <a href="javascript:;" class="text-decoration-none">
-                                    <span class="smw-icon-burger"></span>
-                                </a>
-                            </li>
+                            <li class="m-burger" id="m-burger"><a href="javascript:;" class="text-decoration-none">
+                                <span class="smw-icon-burger"></span>
+                            </a></li>
                         </ul>
                     </div>
                 </header>
-                <header class="header with-transperent smw-py-32 smart-animation">
+                <header class="header smw-py-32 smart-animation">
                     <div class="header__left d-flex justify-content-between align-self-stretch">
                         <a href="index.html" class="header__logo">
-                            <img src="./images/smw-logo.svg" alt="SMW Logo" width="117" height="95">
+                            <img src="./images/smw-logo.png" alt="SMW Logo" width="117" height="95">
                         </a>
                         <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
-                            <li class="m-search"><a href="javascript:;" class="text-decoration-none">
-                                <span class="smw-icon-search"></span></a></li>
+                            <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
+                                        class="smw-icon-search"></span></a></li>
                             <li class="m-close">
                                 <a href="javascript:;" class="text-decoration-none d-block d-lg-none" id="close-mainNav">
                                     <span class="smw-icon-sub-close"></span>
@@ -98,7 +96,7 @@
                                             <div
                                                 class="header__sub-header d-flex justify-content-between align-self-stretch">
                                                 <a href="index.html">
-                                                    <img src="./images/smw-logo.svg" alt="SMW Logo">
+                                                    <img src="./images/smw-logo.png" alt="SMW Logo">
                                                 </a>
                                                 <ul
                                                     class="d-flex align-items-center gap-16 list-group list-group-horizontal">
@@ -179,8 +177,8 @@
                                         <div class="col-sm-12 d-block d-lg-none">
                                             <div
                                                 class="header__sub-header d-flex justify-content-between align-self-stretch">
-                                                <a href="javascript:;">
-                                                    <img src="./images/smw-logo.svg" alt="SMW Logo">
+                                                <a href="index.html">
+                                                    <img src="./images/smw-logo.png" alt="SMW Logo">
                                                 </a>
                                                 <ul
                                                     class="d-flex align-items-center gap-16 list-group list-group-horizontal">
@@ -307,500 +305,371 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-sm-12 col-md-10 col-lg-10 mx-auto">
-                        <div class="masthead__articleWrapper">
-                            <article class="masthead__article">
-                                <h1 class="masthead__article-title smw-mb-24">Sonn Macmillan Walker is one of the largest
-                                    firms of
-                                    specialist criminal defence solicitors</h1>
-                                <p class="masthead__article-content">We have been involved in some of the highest
-                                    profile cases across the UK. Listed in The Times 250 Best Law Firms 2023. Our lawyers
-                                    will
-                                    leave no stone unturned in their commitment to your case.</p>
-                                <p class="masthead__article-cap">Find someone who can help me</p>
-                            </article>
-                            <div class="d-md-flex justify-content-between w-100 align-items-center">
-                                <button
-                                    class="button__blue d-flex gap-8 justify-content-center align-items-center smart-animation">
-                                    <span>View our people</span><span class="smw-icon-right-arrow"></span></button>
-                                <div class="d-inline-block page-scroll-down"
-                                    onclick="scrollToSection('testimonialSection')">
-                                    <img src="./images/down-arrow.svg" alt="Go Down" >
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </div> <!-- Main Navigation -->
+        <main>
+            <div class="primary-bg-color-2 breadcrumb-curve">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="smw-breadcrumb primary" aria-label="breadcrumb">
+                                <ol class="d-flex gap-8 align-items-center">
+                                    <li class="smw-breadcrumb-item">
+                                        <a href="index.html" class="smw-breadcrumb-link"><span class="smw-icon-home"></span></a>
+                                    </li>
+                                    <li class="smw-breadcrumb-item">
+                                        <a href="notable-cases.html" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">Our People</span></a>
+                                    </li>
+                                    <li class="smw-breadcrumb-item">
+                                        <a href="notable-cases.html" class="smw-breadcrumb-link"><span class="smw-icon-dot"></span><span class="smw-breadcrumb-text">Name</span></a>
+                                    </li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div> <!-- masthead -->
-        <div class="arrestsection">
-            <div class="container-fluid container-lg smw-container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <article class="arrestHelpline text-center">
-                            <h1 class="arrestHelpline__title">Arrest helpline</h1>
-                            <p class="arrestHelpline__content">We’re here for you 24/7 so if you, or someone you know, have been arrested,
-                                give us a call straight away. The sooner one of our defence solicitors get to work, the
-                                better it will be for you. Although based in London, we’ll get to you wherever you are.</p>
-                            <p class="d-flex gap-8 align-items-center justify-content-center"><span
-                                    class="smw-icon-phone"></span><span class="smw-phone">020 7481 9157</span></p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Areest Section -->
-        <div class="testimonialSection secondary-curve-top secondary-curve-bottom" id="testimonialSection">
-            <div class="container smw-container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="owl-carousel owl-theme" id="testimonialSlider">
-                            <article class="article text-center">
-                                <p class="d-block d-lg-none article__caption smw-mb-24">Legal 500 Rankings 2023</p>
-                                <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse,
-                                    collaborative and extremely high quality skill set across the range of legal
-                                    professionals and support staff."</p>
-                                <p class="article__caption smw-mb-24">Legal 500 Rankings 2023</p>
-                            </article>
-                            <article class="article text-center">
-                                <p class="d-block d-lg-none article__caption smw-mb-24">Legal 500 Rankings 2023</p>
-                                <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse,
-                                    collaborative and extremely high quality skill set across the range of legal
-                                    professionals and support staff."</p> 
-                                <p class="article__caption smw-mb-24">Legal 500 Rankings 2023</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Testimonial -->
-        <div class="notableCasesSection homepage d-block d-lg-none">
-            <div class="container-fluid container-lg smw-container">
-                <div class="row justify-content-between row-gap">
-                    <div class="col-sm-12">
-                        <article class="article d-flex flex-column flex-md-row justify-content-between">
-                            <h1 class="article__title text-white">Notable Cases</h1>
-                            <p class="text-white d-md-none">Lorem ipsum dolor sit amet consectetur. Amet suspendisse
-                                pellentesque ultricies sem vitae vehicula. Nulla pulvinar morbi nisl dictumst a. Sit felis
-                                magna consequat purus ut lacus purus. </p>
-                            <a href="javascript:;" class="button__outline text-decoration-none smart-animation">Select
-                                an area of expertise <span class="smw-icon-down-arrow"></span></a>
-                        </article>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="owl-carousel owl-theme notableCasesSlider">
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="javascript:;" class="caseItem">
-                                <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                    <div class="casesCard__imgWrap">
-                                        <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                            height="52">
-                                    </div>
-                                    <p class="d-flex gap-8 align-items-center">
-                                        <span class="smw-icon-calendar"></span>
-                                        <span class="casesCard__date">Date Posted</span>
-                                    </p>
-                                    <div>
-                                        <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                            pellentesque?</h2>
-                                        <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                            vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                    </div>
-                                    <p class="link__insight">
-                                        <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <button class="button__blue smart-animation">View all notable cases</button>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Notable Cases Section Mobile -->
-        <div class="notableCasesSection homepage primary-curve-bottom d-none d-lg-block">
-            <div class="container-fluid container-lg smw-container">
-                <div class="row justify-content-between row-gap">
-                    <div class="col-sm-12">
-                        <article class="article d-flex flex-column flex-md-row justify-content-between">
-                            <h1 class="article__title text-white">Notable Cases</h1>
-                            <p class="text-white d-md-none">Lorem ipsum dolor sit amet consectetur. Amet suspendisse
-                                pellentesque ultricies sem vitae vehicula. Nulla pulvinar morbi nisl dictumst a. Sit felis
-                                magna consequat purus ut lacus purus. </p>
-                            <a href="javascript:;" class="button__outline text-decoration-none smart-animation">Select
-                                an area of expertise <span class="smw-icon-down-arrow"></span></a>
-                        </article>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-0 smw-row justify-content-between">
-                            <div class="col"> 
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:;" class="caseItem">
-                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
-                                        <div class="casesCard__imgWrap">
-                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
-                                                height="52">
-                                        </div>
-                                        <p class="d-flex gap-8 align-items-center">
-                                            <span class="smw-icon-calendar"></span>
-                                            <span class="casesCard__date">Date Posted</span>
-                                        </p>
-                                        <div>
-                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                                pellentesque?</h2>
-                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
-                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
-                                        </div>
-                                        <p class="link__insight">
-                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <button class="button__blue smart-animation">View all notable cases</button>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Notable Cases Section Desktop -->
-        <div class="insightSection homepage">
-            <div class="container-fluid container-lg smw-container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <article class="article">
-                            <h1 class="smw-mb-16">Insights</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet risus augue. Quisque
-                                non rutrum magna. Morbi euismod ullamcorper malesuada.</p>
-                        </article>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="owl-carousel owl-theme" id="insightSlider">
-                            <article class="insightCard">
-                                <div class="insightCard__head">
-                                    <img src="./images/insight-card-image.png" alt="image"
-                                        class="insightCard__img img-fluid">
-                                </div>
-                                <div class="insightCard__body">
-                                    <a href="javascript:;" class="insight__link">
-                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
-                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to this
-                                                insight</span><span class="smw-icon-right-arrow"></span></p>
-                                    </a>
-                                    <div>
-                                        <p class="p__xsmall smw-mb-8">Read more insights about</p>
-                                        <p class="d-flex gap-8">
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="insightCard">
-                                <div class="insightCard__head">
-                                    <img src="./images/insight-card-image.png" alt="image"
-                                        class="insightCard__img img-fluid">
-                                </div>
-                                <div class="insightCard__body">
-                                    <a href="javascript:;" class="insight__link">
-                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
-                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to this
-                                                insight</span><span class="smw-icon-right-arrow"></span></p>
-                                    </a>
-                                    <div>
-                                        <p class="p__xsmall smw-mb-8">Read more insights about</p>
-                                        <p class="d-flex gap-8">
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="insightCard">
-                                <div class="insightCard__head">
-                                    <img src="./images/insight-card-image.png" alt="image"
-                                        class="insightCard__img img-fluid">
-                                </div>
-                                <div class="insightCard__body">
-                                    <a href="javascript:;" class="insight__link">
-                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
-                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to this
-                                                insight</span><span class="smw-icon-right-arrow"></span></p>
-                                    </a>
-                                    <div>
-                                        <p class="p__xsmall smw-mb-8">Read more insights about</p>
-                                        <p class="d-flex gap-8">
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                            <button class="button__insight smart-animation"><span
-                                                    class="smw-btn-text">Expertise</span></button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <button class="button__blue smart-animation">View all of our insights </button>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- insightSection -->
-        <div class="cardFeatured white-bg-color-2">
-            <div class="cardFeatured__inner">
-                <div class="card-section">
-                    <div class="container-fluid container-lg smw-container">
-                        <div class="row align-items-center card-section__gap">
-                            <div class="col-12 col-sm-12 col-md-5 ">
+                </div> 
+            </div><!-- Breadcrumb--> 
+            <div class="notableArticleSection">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="notableArticle">
                                 <article class="article">
-                                    <p class="d-none d-lg-block smw-mb-8">About Us</p>
-                                    <h2 class="article__title">Our lawyers will leave no stone unturned in their commitment
-                                        to
-                                        your case</h2>
-                                    <p class="article__content">Velit purus egestas tellus phasellus. Mattis eget sed
-                                        faucibus magna vulputate pellentesque a diam tincidunt. Aenean malesuada tellus
-                                        tellus faucibus mauris quisque mauris in.</p>
-                                    <button class="button__blue smart-animation">About Us</button>
+                                    <h1>Notable Case Title</h1>
+                                    <p class="p__xsmall d-flex gap-8 align-items-center smw-pb-16"><span class="smw-icon-calendar"></span><span>Date of Article</span></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum a nibh eget tincidunt. Etiam dignissim, dui sed bibendum facilisis, augue turpis elementum velit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum a nibh eget tincidunt. Etiam dignissim, dui sed bibendum facilisis, augue turpis elementum velit.</p>
+                                    <h2 class="smw-pt-16">Subheading</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum a nibh eget tincidunt. Etiam dignissim, dui sed bibendum facilisis, augue turpis elementum velit.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Adipiscing velit imperdiet nam feugiat amet viverra pretium. Orci lectus nullam massa rhoncus diam sagittis commodo feugiat quam. Ultricies amet leo non arcu ut nunc sollicitudin et amet. Feugiat suspendisse at eget pellentesque. Orci cursus cras nibh molestie mauris et id amet mi. Fringilla sed enim posuere accumsan a tincidunt fames neque. Gravida maecenas ac et tellus pellentesque at ut urna turpis. Vitae cras turpis tincidunt dis habitant justo amet velit. Feugiat sit dis nunc turpis ornare. Amet sit dui fames adipiscing sagittis integer pulvinar. Fermentum euismod porttitor eget blandit diam sit quam. Dictum ultrices lectus quis hac.</p>
+                                    <ul class="article__list">
+                                        <li class="article__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. </li>
+                                        <li class="article__list-item">Etiam tempor lacinia lectus.</li>
+                                        <li class="article__list-item">sit amet ornare urna ultrices sed.</li>
+                                    </ul>
+                                </article>
+                                <div class="peopleCard flex-column gap-16 d-none d-md-flex">
+                                    <div class="peopleCard__head">
+                                        <img src="./images/people-card-image.png" alt="image" class="peopleCard__img img-fluid">
+                                    </div>
+                                    <div class="peopleCard__body">
+                                        <article class="d-flex gap-8 flex-column">
+                                            <h2>Name Name</h2>
+                                            <p class="smw-primary-text">Title</p>
+                                            <div class="d-flex gap-16">
+                                                <p class="link__people"><span class="smw-icon-email"></span><a href="" class="link__people-text smart-animation">Email</a></p>
+                                                <p class="link__people"><span class="smw-icon-link smw-icon-linkedln-blue"></span><a href="" class="link__people-text smart-animation">LinkedIn</a></p>
+                                            </div>
+                                            <button class="smw-mt-48 button__blue d-flex gap-8 align-items-center smart-animation"><span>Read more cases by {xxx}</span><span class="smw-icon-right-arrow"></span></button>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- notable Article -->
+            <div class="testimonialSection secondary-curve-top secondary-curve-bottom" id="testimonialSection">
+                <div class="container smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="owl-carousel owl-theme" id="testimonialSlider">
+                                <article class="article text-center">
+                                    <p class="article__caption smw-mb-24">(Team members name)'s testimonials</p>
+                                    <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse, collaborative and extremely high quality skill set across the range of legal professionals and support staff."</p>
+                                    <!-- <p class="d-none article__caption smw-mb-24">Legal 500 Rankings 2023</p> -->
+                                </article>
+                                <article class="article text-center">
+                                    <p class="article__caption smw-mb-24">(Team members name)'s testimonials</p>
+                                    <p class="article__content smw-mb-24">"SMW are an exceptional team who offer a diverse, collaborative and extremely high quality skill set across the range of legal professionals and support staff."</p> 
+                                    <!-- <p class="d-none article__caption smw-mb-24">Legal 500 Rankings 2023</p> -->
                                 </article>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 offset-md-1 images-cus  d-none d-md-flex">
-                                <img class="card-section__image img-fluid" src="../dist/images/card-section.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Testimonial -->
+            <div class="notableCasesSection peoplepage">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row justify-content-between row-gap">
+                        <div class="col-sm-12">
+                            <article class="article">
+                                    <div class="article__leftCont">
+                                        <h1 class="article__title">Notable Cases</h1>
+                                        <p class="article__content">Lorem ipsum dolor sit amet consectetur. Amet suspendisse
+                                            pellentesque ultricies sem vitae vehicula. Nulla pulvinar morbi nisl dictumst a. Sit felis
+                                            magna consequat purus ut lacus purus. </p>
+                                    </div>
+                                    <button class="button__blue d-flex gap-8 align-items-center smart-animation d-none d-lg-flex"><span>View all of {Team member name}’s notable cases</span><span class="smw-icon-right-arrow"></span></button>
+                            </article>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="owl-carousel owl-theme notableCasesSlider">
+                                <a href="javascript:;" class="caseItem">
+                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                        <div class="casesCard__imgWrap">
+                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                                height="52">
+                                        </div>
+                                        <p class="d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="casesCard__date">Date Posted</span>
+                                        </p>
+                                        <div>
+                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</h2>
+                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                        </div>
+                                        <p class="link__insight">
+                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="caseItem">
+                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                        <div class="casesCard__imgWrap">
+                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                                height="52">
+                                        </div>
+                                        <p class="d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="casesCard__date">Date Posted</span>
+                                        </p>
+                                        <div>
+                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</h2>
+                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                        </div>
+                                        <p class="link__insight">
+                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="caseItem">
+                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                        <div class="casesCard__imgWrap">
+                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                                height="52">
+                                        </div>
+                                        <p class="d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="casesCard__date">Date Posted</span>
+                                        </p>
+                                        <div>
+                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</h2>
+                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                        </div>
+                                        <p class="link__insight">
+                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="caseItem">
+                                    <div class="casesCard with-white-text d-flex gap-16 flex-column smart-animation">
+                                        <div class="casesCard__imgWrap">
+                                            <img src="./images/author-img.png" class="rounded-circle" alt="author name" width="52"
+                                                height="52">
+                                        </div>
+                                        <p class="d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="casesCard__date">Date Posted</span>
+                                        </p>
+                                        <div>
+                                            <h2 class="casesCard__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</h2>
+                                            <p class="p__small">Ut ultrices tristique bibendum. Phasellus dignissim ultricies diam
+                                                vitae commodo. Sed congue quis sem quis bibendum.</p>
+                                        </div>
+                                        <p class="link__insight">
+                                            <span class="smw-btn-text">Read More</span><span class="smw-icon-right-arrow"></span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 d-lg-none">
+                            <button class="button__blue gap-8 align-items-center smart-animation d-flex"><span>View all of {Team member name}’s notable cases</span><span class="smw-icon-right-arrow"></span></button>
+                            <!-- <button class="button__blue d-flex gap-8 align-items-center smart-animation"><span>Related cases</span><span class="smw-icon-right-arrow"></span></button> -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Notable Cases Section 2 -->
+            <div class="accrediationSection">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="accrediationWrapper">
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
+                                <div class="accrediationItem">
+                                    <span class="accrediationText">Accrediation Logo</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container smw-container d-block d-md-none">
-                <div class="row">
-                    <div class="col-12 ">
-                        <img class="card-section__image img-fluid" src="../dist/images/card-section.svg" alt="">
+            </div> <!-- Accrediation Section-->
+            <div class="insightSection peoplepage">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <article class="article">
+                                <h2 class="article__title">Insights</h2>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 d-none d-lg-block">
+                            <div class="row row-cols-lg-3 row-cols-xl-3 smw-row g-0">
+                                <div class="col">
+                                    <a href="javascript:;" class="insightCard">
+                                        <div class="insightCard__head">
+                                            <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                        </div>
+                                        <div class="insightCard__body with-calendar">
+                                            <p class="p__xsmall d-flex gap-8 align-items-center">
+                                                <span class="smw-icon-calendar"></span>
+                                                <span class="">Date</span>
+                                            </p>
+                                            <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                            <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</p>
+                                            <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                    More</span><span class="smw-icon-right-arrow"></span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="insightCard">
+                                        <div class="insightCard__head">
+                                            <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                        </div>
+                                        <div class="insightCard__body with-calendar">
+                                            <p class="p__xsmall d-flex gap-8 align-items-center">
+                                                <span class="smw-icon-calendar"></span>
+                                                <span class="">Date</span>
+                                            </p>
+                                            <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                            <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</p>
+                                            <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                    More</span><span class="smw-icon-right-arrow"></span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="insightCard">
+                                        <div class="insightCard__head">
+                                            <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                        </div>
+                                        <div class="insightCard__body with-calendar">
+                                            <p class="p__xsmall d-flex gap-8 align-items-center">
+                                                <span class="smw-icon-calendar"></span>
+                                                <span class="">Date</span>
+                                            </p>
+                                            <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                            <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                pellentesque?</p>
+                                            <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                    More</span><span class="smw-icon-right-arrow"></span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 d-block d-lg-none">
+                            <div class="owl-carousel owl-theme" id="insightSlider">
+                                <a href="javascript:;" class="insightCard">
+                                    <div class="insightCard__head">
+                                        <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                    </div>
+                                    <div class="insightCard__body with-calendar">
+                                        <p class="p__xsmall d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="">Date</span>
+                                        </p>
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                        <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            pellentesque?</p>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                More</span><span class="smw-icon-right-arrow"></span></p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="insightCard">
+                                    <div class="insightCard__head">
+                                        <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                    </div>
+                                    <div class="insightCard__body with-calendar">
+                                        <p class="p__xsmall d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="">Date</span>
+                                        </p>
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                        <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            pellentesque?</p>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                More</span><span class="smw-icon-right-arrow"></span></p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="insightCard">
+                                    <div class="insightCard__head">
+                                        <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                    </div>
+                                    <div class="insightCard__body with-calendar">
+                                        <p class="p__xsmall d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="">Date</span>
+                                        </p>
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                        <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            pellentesque?</p>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                More</span><span class="smw-icon-right-arrow"></span></p>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="insightCard">
+                                    <div class="insightCard__head">
+                                        <img src="./images/insight-card-image.png" alt="image" class="insightCard__img img-fluid">
+                                    </div>
+                                    <div class="insightCard__body with-calendar">
+                                        <p class="p__xsmall d-flex gap-8 align-items-center">
+                                            <span class="smw-icon-calendar"></span>
+                                            <span class="">Date</span>
+                                        </p>
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque?</h2>
+                                        <p class="smw-primary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            pellentesque?</p>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Read
+                                                More</span><span class="smw-icon-right-arrow"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="button__blue smart-animation">View all of {team member}’s insights </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div> <!-- Card Featured -->        
+            </div> <!-- insightSection -->          
+        </main>
+        <!-- footer section -->
         <footer class="smwFooter">
             <div class="smwFooter__top">
                 <div class="container-fluid container-lg smw-container">
@@ -913,7 +782,8 @@
                 </div>
     
             </div>
-        </footer><!-- footer section -->
+        </footer>
+        <!-- footer section -->
     </div> <!-- Wrapper -->
     <div class="popup smart-animation" id="popup">
         <div class="container smw-container">
@@ -942,4 +812,5 @@
     <script src="../dist/vendors/owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="../dist/js/scripts.min.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,10 @@
 .homepage{
+    &.insightSection{
+        padding: 160px 0px 88px 0px;
+        @include media-breakpoint-down(lg) {
+            padding: 88px 0px 88px 0px;
+        }
+    }
     &.notableCasesSection{
         padding: 158px 0px 88px 0px;
         @include media-breakpoint-down(md) {

@@ -1,0 +1,34 @@
+.accrediationSection{
+    .accrediationWrapper{
+        padding: 88px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 43px;
+        @include media-breakpoint-down(lg) {
+            padding: 72px 0px;
+        }
+    }
+    .accrediationItem{
+        width: 139px;
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        background-color: $primary-color-1;
+    }
+    .accrediationText{
+        color: $white-color-1;
+        text-align: center;
+
+        /* Paragraph Text Extra Small */
+        font-family: $primary-font-regular;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 166.667% */
+        letter-spacing: 1.068px;
+        text-transform: uppercase;
+    }
+}

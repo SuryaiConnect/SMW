@@ -1,0 +1,58 @@
+.peoplepage{
+    &.insightSection{
+        @include media-breakpoint-down(lg) {
+           
+        }
+        .container-fluid{
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
+        }
+        .article{
+            max-width: 100%;
+            text-align: left;
+            padding: 0px;
+            &__title{
+                color: $primary-color-6;
+                @include media-breakpoint-down(lg) {
+                    padding: 0px 32px;
+                }
+
+                /* H2 */
+                font-family: $primary-font-regular;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px; /* 113.333% */
+                letter-spacing: -0.3px;
+            }
+        }
+        .insightCard{
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                .link__insight{
+                    gap: 16px;
+                }
+            }
+        }
+        .button__blue{
+            @include media-breakpoint-down(lg) {
+                margin: 0 32px;
+            }
+        }
+        .smw-row{
+            padding: 64px 0px;
+            @include dynamic-gap(40px);
+            @include media-breakpoint-down(md) {
+                padding: 0px 32px;
+            }
+            .col{
+                flex: 1 0 auto;
+            }    
+        }
+    }
+    &.notableCasesSection{
+        padding: 145px 0px 88px 0px;
+    }
+}
