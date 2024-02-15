@@ -1,0 +1,27 @@
+.ourPeople-page {
+    .contentSections {
+        padding: 126px 0 88px;
+    }
+
+    .testimonialSection {
+        &::before {
+            background-color: $white-color-3;
+        }
+    }
+
+    .caseCardSection {
+        padding-bottom: 88px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 88px 0;
+        }
+
+        .smw-row {
+            @include dynamic-gap-xy(48px, 32px);
+
+            @include media-breakpoint-down(sm) {
+                @include dynamic-gap-xy(32px, 32px);
+            }
+        }
+    }
+}
