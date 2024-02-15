@@ -1,19 +1,59 @@
 .expertisepage{
     &.notableCasesSection{
-        &:after{
-            content:'';
-            position: absolute;
-            height: 57px;
-            width: 100%;
-            left: 0px;
-            bottom: -56px;
-            background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
-            background-size: 100%;
-            z-index: 1;
-            @include media-breakpoint-up(xxl) {
-                background-size: cover;
-                height: 80px;
-                bottom: -80px;
+        .notableCasesSlider {
+            .owl-nav{
+                display: none;
+            }
+        }
+    }
+    &.meetourTeam{
+        .button__blue {
+            @include media-breakpoint-down(sm) {
+                width: 80%;
+                justify-content: center;
+            }
+        }
+    }
+    &.requestSections {
+        padding: 88px 0 145px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 72px 0 73px 0px;
+        }
+    }
+    &.ctaSection{
+        padding: 145px 0px 145px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 93px 0 93px 0;
+        }
+        .arrestCTA{
+            max-width: 100%;
+            @include media-breakpoint-up(md) {
+                gap: 88px;
+            }
+            &__content{
+                @include media-breakpoint-up(md) {
+                    max-width: 625px; // 771px 
+                    flex: 1;
+                }
+                @include media-breakpoint-up(xl) {
+                    max-width: 690px; 
+                    flex: 1;
+                }
+                @include media-breakpoint-up(xxl) {
+                    max-width: 771px; 
+                    flex: 1;
+                }
+            }
+
+            &__contact{
+                max-width: unset;
+                &-phone{
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 44px; /* 110% */
+                    letter-spacing: -0.4px;
+                }
             }
         }
     }
