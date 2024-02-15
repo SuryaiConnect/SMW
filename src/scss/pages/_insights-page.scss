@@ -1,0 +1,37 @@
+.insights-page {
+    .contentSections {
+        padding-bottom: 0;
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            gap: 16px;
+
+            &__content {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+                letter-spacing: -0.016px;
+            }
+        }
+    }
+
+    .caseCardSection {
+        // padding-bottom: 88px;
+
+        // @include media-breakpoint-down(sm) {
+        //     padding: 88px 0;
+        // }
+
+        .smw-row {
+            @include dynamic-gap-xy(48px, 32px);
+
+            @include media-breakpoint-down(sm) {
+                @include dynamic-gap-xy(32px, 32px);
+            }
+        }
+    }
+}

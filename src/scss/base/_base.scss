@@ -8,21 +8,24 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 html {
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
-body{
+
+body {
     font-family: $primary-font-regular;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
-.smw-container{   
+.smw-container {
     @include media-breakpoint-up(xxl) {
         // above 1400
         max-width: 1214px;
         margin: 0 auto;
     }
+
     @include media-breakpoint-down(xl) {
         max-width: 1214px;
         padding: 0 32px;

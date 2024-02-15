@@ -1,0 +1,81 @@
+.RTE-Section {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 88px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 48px 0;
+        gap: 32px;
+    }
+
+    h1 {
+        color: $primary-color-1;
+        /* H1 */
+        font-family: Raleway;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: -0.4px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+            line-height: normal;
+            letter-spacing: -0.32px;
+        }
+    }
+
+    h3 {
+        color: $primary-color-1;
+        /* H3 */
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -0.22px;
+        padding-top: 16px;
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 24px;
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: -0.26px;
+        }
+    }
+
+    p {
+        color: $primary-color-3;
+        /* Para Text Large */
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.022px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.016px;
+        }
+    }
+
+    ul {
+        list-style: disc;
+        margin-left: 20px;
+
+        li {
+            color: $primary-color-3;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.016px;
+        }
+    }
+}
