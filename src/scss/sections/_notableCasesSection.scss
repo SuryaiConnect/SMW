@@ -2,58 +2,61 @@
 *   Notable Cases Section
 **********************************/
 .notableCasesSection{
-    padding: 158px 0px 88px 0px;
+    padding: 88px 0px 88px 0px; 
     background-color: $primary-color-2;
     position: relative;
-    @include media-breakpoint-down(md) {
-        padding: 88px 0px 88px 0px;
+    .row-gap{
+        gap: 49px;
+        @include media-breakpoint-down(lg) {
+            gap: 32px;
+        }
     }
     .container-fluid{
         @include media-breakpoint-down(lg) {
             padding: 0;
         }
-    }
-    &:after{
-        content:'';
-        position: absolute;
-        height: 57px;
-        width: 100%;
-        left: 0px;
-        bottom: -56px;
-        background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
-        background-size: 100%;
-        z-index: 1;
-        @include media-breakpoint-up(xxl) {
-            background-size: cover;
-            height: 80px;
-            bottom: -80px;
-        }
-    }
+    }    
     .article{
-        @include media-breakpoint-up(md) {
-            margin-bottom: 72px;
-        }
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
         @include media-breakpoint-down(lg) {
-            padding: 0 32px;
+            padding: 0px 32px;
         }
-       &__title{
-            // margin-bottom: 49px;
-            @include media-breakpoint-down(md) {
-                margin-bottom: 24px;
+        &__leftCont{
+            @include media-breakpoint-up(lg) {
+                max-width: 720px; 
             }
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
-        .button__outline{
-            @include media-breakpoint-down(md) {
-                margin: 32px 0;  
-            }
-        }        
+        &__title{
+            color: $white-color-1;
+
+            /* H2 */
+            font-family: $primary-font-regular;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px; /* 113.333% */
+            letter-spacing: -0.3px;
+        }
+        &__content{
+            color: $white-color-1;
+
+            /* Paragraph Text */
+            font-family:  $primary-font-regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.016px;
+        }
+        
     }
     .casesCard{
-        border: 1px solid $white-color-1;
-        margin-bottom: 49px;
-        @include media-breakpoint-down(lg) {
-            margin-bottom: 0px;
-        }
+        border: 1px solid $white-color-1;        
         .link__insight{
             transition: all 0.3s ease-out;
         }
@@ -64,15 +67,12 @@
             }
         }
     }
-    #notableCasesSlider{
+    .notableCasesSlider{
         @include media-breakpoint-up(lg) {
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
             // gap: 21px;
-            justify-content: space-between;
-        }
-        .owl-stage-outer{
-            padding-top: 22px;
+            // justify-content: space-between;
         }
         .caseItem{
             text-decoration: none; 
@@ -80,8 +80,11 @@
                 max-width: 31.5%;
             }            
         }
+        .owl-stage-outer{
+            // margin: 0px -1px;
+        }
         .owl-dots{
-            margin: 24px 0 32px 0px;
+            margin: 32px 0 0px 0px;
             .owl-dot{
                 &.active{
                     span{
@@ -94,6 +97,34 @@
                     background: $secondary-color-5;
                 }
             }
+        }
+        &.owl-carousel{
+            .owl-nav{
+                margin-top: 49px;
+                button.owl-next,
+                button.owl-prev{
+                    border: 1px solid $white-color-1; 
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    margin: 0px 12px;
+                    transition: all 0.3s ease-out;
+                    &:hover{
+                        background-color: $secondary-color-4;
+                    }
+                    .smw-icon-button-right, .smw-icon-button-left{
+                        &::before{
+                            color: $white-color-1;
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button__blue{
+        @include media-breakpoint-down(lg) {
+            margin: 0px 32px;
         }
     }
 }
