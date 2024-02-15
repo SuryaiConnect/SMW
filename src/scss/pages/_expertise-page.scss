@@ -6,8 +6,25 @@
             }
         }
     }
+    &.meetourTeam{
+        .button__blue {
+            @include media-breakpoint-down(sm) {
+                width: 80%;
+                justify-content: center;
+            }
+        }
+    }
+    &.requestSections {
+        padding: 88px 0 145px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 72px 0 73px 0px;
+        }
+    }
     &.ctaSection{
-        padding: 145px 0px 88px 0px;
+        padding: 145px 0px 145px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 93px 0 93px 0;
+        }
         .arrestCTA{
             max-width: 100%;
             @include media-breakpoint-up(md) {
