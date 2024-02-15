@@ -7,41 +7,6 @@
     position: relative;
     margin-top: 57px;
 
-    &:before {
-        content: '';
-        position: absolute;
-        height: 57px;
-        width: 100%;
-        left: 0px;
-        top: -56px;
-        background: url('./../images/curve-top.svg') center 100% no-repeat;
-        background-size: 100%;
-
-        @include media-breakpoint-up(xxl) {
-            background-size: cover;
-            height: 80px;
-            top: -80px;
-        }
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        height: 57px;
-        width: 100%;
-        left: 0px;
-        bottom: -56px;
-        background: url('./../images/curve-bottom.svg') center 0% no-repeat;
-        background-size: 100%;
-        z-index: 1;
-
-        @include media-breakpoint-up(xxl) {
-            background-size: cover;
-            height: 80px;
-            bottom: -78px;
-        }
-    }
-
     @include media-breakpoint-down(md) {
         padding: 72px 0px;
         margin-top: 20px;

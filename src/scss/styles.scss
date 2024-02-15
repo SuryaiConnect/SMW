@@ -11,6 +11,7 @@
 @import 'utilities/variables';
 @import 'utilities/utilities';
 @import 'utilities/bgcolors';
+@import 'utilities/curveclasses.scss';
 
 // Base
 @import 'base/reset';
@@ -56,6 +57,7 @@
 @import 'sections/relatedCasesSection';
 @import 'sections/notablearticleSection';
 @import 'sections/accordian';
+@import 'sections/relatedExpertiseSection';
 
 
 // Pages
