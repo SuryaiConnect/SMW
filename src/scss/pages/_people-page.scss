@@ -1,0 +1,119 @@
+.peoplepage{
+    &.peopleArticleSection{
+        padding: 145px 0px 88px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 96px 0px 48px 0px;
+
+        }
+        .peopleArticle{
+            @include media-breakpoint-down(md) {
+                flex-direction: column-reverse;
+                gap: 40px;
+            }
+            .article{
+                @include media-breakpoint-down(xl) {
+                    flex: 8;
+                }
+            }
+            .peopleCard {
+                @include media-breakpoint-down(xl) {
+                    flex: 4;
+                }
+                @include media-breakpoint-down(md) {
+                    max-width: 350px;
+                }
+                &__head{
+                    &-name{
+                        color: $primary-color-1;
+                        font-family: $primary-font-regular;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 38px;
+                        letter-spacing: -0.01em;
+                        text-align: left;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }    
+    &.insightSection{
+        @include media-breakpoint-down(md) {
+            padding: 0px 0px 88px 0px;
+        }
+        .container-fluid{
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
+        }
+        .article{
+            max-width: 100%;
+            text-align: left;
+            padding: 0px;
+            &__title{
+                color: $primary-color-6;
+                @include media-breakpoint-down(lg) {
+                    padding: 0px 32px;
+                }
+
+                /* H2 */
+                font-family: $primary-font-regular;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px; /* 113.333% */
+                letter-spacing: -0.3px;
+            }
+        }
+        .insightCard{
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                .link__insight{
+                    gap: 16px;
+                }
+            }
+        }
+        .button__blue{
+            @include media-breakpoint-down(lg) {
+                margin: 0 32px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        .smw-row{
+            padding: 64px 0px;
+            @include dynamic-gap(40px);
+            @include media-breakpoint-down(md) {
+                padding: 0px 32px;
+            }
+            .col{
+                flex: 1 0 auto;
+            }    
+        }
+    }
+    &.notableCasesSection{
+        padding: 145px 0px 88px 0px;
+        @include media-breakpoint-down(lg) {
+            padding: 88px 0px 88px 0px;
+        }
+        .notableCasesSlider.owl-carousel .owl-nav,
+        .notableCasesSlider.owl-carousel .owl-dots
+         {
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
+    &.accrediationSection{
+        .accrediationWrapper{
+            padding: 145px 0px 88px 0px;
+            @include media-breakpoint-down(lg) {
+                padding: 88px 0px 88px 0px;
+            }
+       }
+    }
+}

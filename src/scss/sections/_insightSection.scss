@@ -3,13 +3,11 @@
 **********************************/
 
 .insightSection{
-    padding: 160px 0px 88px 0px;
+    padding: 88px 0px 88px 0px;
     
     background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
-    background-color: $white-color-2;
-    @include media-breakpoint-down(lg) {
-        padding: 88px 0px 88px 0px;
-    }
+    background-color: $white-color-2; 
+
     @include media-breakpoint-down(md) { 
         background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% -100% no-repeat;
     }
