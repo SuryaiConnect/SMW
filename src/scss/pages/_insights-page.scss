@@ -1,6 +1,17 @@
 .insights-page {
+    .smwFilter {
+        @include media-breakpoint-down(sm) {
+            padding: 56px 0;
+        }
+
+    }
+
     .contentSections {
         padding-bottom: 0;
+
+        .smw-icon-dot {
+            font-size: 12px;
+        }
 
         .article {
             display: flex;
@@ -31,6 +42,16 @@
 
             @include media-breakpoint-down(sm) {
                 @include dynamic-gap-xy(32px, 32px);
+            }
+        }
+
+        .insightCard {
+            .insightCard {
+                &__body {
+                    &-title {
+                        font-family: $primary-font-regular;
+                    }
+                }
             }
         }
     }
