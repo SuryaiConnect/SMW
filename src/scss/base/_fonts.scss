@@ -5,7 +5,6 @@
 ***********************************************/
 
 $primary-font-regular: 'raleway';
-
 @font-face {
   font-family: $primary-font-regular;
   src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
@@ -15,7 +14,6 @@ $primary-font-regular: 'raleway';
 }
 
 $primary-font-semibold: 'raleway-semibold';
-
 @font-face {
   font-family: $primary-font-semibold;
   src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
@@ -25,7 +23,6 @@ $primary-font-semibold: 'raleway-semibold';
 }
 
 $primary-font-bold: 'raleway-bold';
-
 @font-face {
   font-family: $primary-font-bold;
   src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
@@ -33,6 +30,27 @@ $primary-font-bold: 'raleway-bold';
   font-weight: normal;
   font-style: normal;
 }
+
+$inter-font-regular: 'interregular';
+@font-face {
+  font-family: $inter-font-regular;
+  src: url('../fonts/inter-regular-webfont.woff2') format('woff2'),
+       url('../fonts/inter-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$inter-font-bold: 'interbold';
+@font-face {
+  font-family: $inter-font-bold;
+  src: url('../fonts/inter-bold-webfont.woff2') format('woff2'),
+       url('../fonts/inter-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 /*  
 * All Icons

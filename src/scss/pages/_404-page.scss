@@ -1,0 +1,53 @@
+.page-404 {
+  display: flex;
+  justify-content: center;
+  padding: 135px 0px 88px 0px;
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    &__title {
+      color: $secondary-color-5;
+      font-family: $inter-font-bold;
+      font-size: 184px;
+      font-weight: 800;
+      line-height: 164px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      max-height: 138px;
+    }
+    &__sub-title {
+      color: $primary-color-2;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; /* 60% */
+      letter-spacing: -0.04px;
+      text-transform: uppercase;
+    }
+    &__content {
+      color: $primary-color-3;
+      text-align: center;
+
+      /* Paragraph Text */
+      font-family: $primary-font-regular;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.016px;
+    }
+    &__btn{
+      display: flex;
+      gap: 32px;
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+
+    }
+    }
+    .button__insight{    
+      padding: 16px 24px;
+    }
+  }
+}
