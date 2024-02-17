@@ -1,12 +1,24 @@
 .contactUsSection{
     padding: 88px 0px 95px 0px;
+    @include media-breakpoint-down(sm) {
+        padding: 64px 0px 0px 0px;  
+    }
     .article{
         display: flex;
         justify-content: space-between;
         gap: 104px;
+        @include media-breakpoint-down(lg) {
+            gap: 48px;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-direction: column-reverse;
+        }
         &__map{
             max-width: 833px;
             flex: 1;
+            border: 1px solid red;
+            border-radius: 24px;
+            overflow: hidden;
         }
         &__content{
             display: flex;
@@ -30,7 +42,18 @@
                 letter-spacing: -0.001em;
                 text-align: left;
             }
-            
+
+            .smw-icon-linkedln-blue, .smw-icon-twitter{
+                &::before{
+                    font-size: 20px;
+                    color: $secondary-color-1;
+                }
+            }            
+        }
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
     }
 }
