@@ -16,7 +16,6 @@
         &__map{
             max-width: 833px;
             flex: 1;
-            border: 1px solid red;
             border-radius: 24px;
             overflow: hidden;
         }
@@ -41,6 +40,14 @@
                 line-height: 24px;
                 letter-spacing: -0.001em;
                 text-align: left;
+            }
+
+            .link{
+                color: $primary-color-1;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
 
             .smw-icon-linkedln-blue, .smw-icon-twitter{
