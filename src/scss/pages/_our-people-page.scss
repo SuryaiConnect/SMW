@@ -1,9 +1,21 @@
 .ourPeople-page {
     .contentSections {
-        padding: 126px 0 88px;
+        padding: 135px 0 88px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 88px 0px 88px 0px;
+        }
+        .article{
+            &__title{
+                margin-bottom: 32px;
+            }
+            &__content{
+                font-size: 16px;
+            }
+        }
     }
 
     .testimonialSection {
+        margin-top: 56px; 
         &::before {
             background-color: $white-color-3;
         }
@@ -11,7 +23,6 @@
 
     .caseCardSection {
         padding-bottom: 88px;
-
         @include media-breakpoint-down(sm) {
             padding: 88px 0;
         }
@@ -22,6 +33,20 @@
             @include media-breakpoint-down(sm) {
                 @include dynamic-gap-xy(32px, 32px);
             }
+        }
+    }
+    .cardFeatured{
+        .card-section{
+            padding: 88px 0px 145px 0px;
+            @include media-breakpoint-down(md) {
+                padding: 88px 0px 88px 0px;
+            }
+        }
+    }
+    .requestSections{
+        padding: 145px 0px 88px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 88px 0px 88px 0px;
         }
     }
 }

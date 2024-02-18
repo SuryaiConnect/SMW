@@ -81,7 +81,7 @@
   //   }
   // }
 
-  &.row-cols-md-3>* {
+  &.row-cols-md-2>* {
     @include media-breakpoint-down(lg) {
       width: calc(50% - 22px);
     }

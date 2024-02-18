@@ -1,5 +1,13 @@
 .paraTeam-page {
     .card-section {
+        padding: 88px 0 145px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 88px 0px 88px 0px;
+        }
+        background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% 15% no-repeat;
+        @include media-breakpoint-down(md) { 
+            background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% -100% no-repeat;
+        }
         .article__title {
             font-size: 22px;
             line-height: 26px;
