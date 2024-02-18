@@ -1,0 +1,46 @@
+.searchResults{
+    padding: 145px 0px 88px 0px;
+    @include media-breakpoint-down(md) {
+        padding: 88px 0px 88px 0px;
+    }
+    .searchResultWrapper{
+        max-width: 872px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        @include media-breakpoint-down(md) {
+            gap: 48px;
+        }
+    }
+    .article{
+        padding: 32px 0px;
+        border-top: 1px solid $primary-color-1;
+        display: flex;
+        align-items: flex-start;
+        gap: 32px; 
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+        &__img{
+            border-radius: 12px;
+        }
+        &__title{
+            font-family: $primary-font-regular;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        &__content{
+            font-family: $primary-font-regular;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.001em;
+            text-align: left;
+        }
+    }
+}

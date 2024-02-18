@@ -1,0 +1,14 @@
+.contactUsPage{
+    &.contentSections {
+        padding: 145px 0px 88px 0px; 
+        @include media-breakpoint-down(md) {
+            padding: 135px 0px 88px 0px;  
+        }
+    }
+    &.frameSection{
+        padding: 0px 0px 145px 0px;
+        @include media-breakpoint-down(sm) {
+            padding: 88px 0px 88px 0px; 
+        }
+    }
+}

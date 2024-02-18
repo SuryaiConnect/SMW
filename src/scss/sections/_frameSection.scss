@@ -1,0 +1,42 @@
+.frameSection{
+    padding: 0px 0px 88px 0px;
+    .frameWrapper{
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+    .frameInner{
+        display: flex;
+        flex-direction: column;
+        max-width: 399.5px;
+        flex: 1;
+        align-items: center;
+        gap: 13px;
+    }
+    .heading{
+        color: $primary-color-1;
+        font-family: $primary-font-regular;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .email{
+        color: $primary-color-1;
+        font-family: $primary-font-regular;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.001em;
+        text-align: left;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -61,6 +61,10 @@
 @import 'sections/richTextSection';
 @import 'sections/accrediationSection';
 @import 'sections/peopleArticleSection';
+@import 'sections/contactUsSection';
+@import 'sections/frameSection';
+
+
 // Pages
 @import 'pages/homepage';
 @import 'pages/about-us-page';
@@ -77,3 +81,5 @@
 @import 'pages/404-page';
 @import 'pages/people-page';
 @import 'pages/terms-and-condition-page'; 
+@import 'pages/contact-us-page';
+@import 'pages/search-results';

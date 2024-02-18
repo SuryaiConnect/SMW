@@ -79,6 +79,9 @@
         justify-content: center;
         align-items: center;
         gap: 8px;
+        &.active{
+            background-color: $white-color-3;
+        } 
         &:hover{
             border: 1px solid $primary-color-1;
             background-color: $white-color-3;
