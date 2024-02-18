@@ -1,0 +1,66 @@
+.contactUsSection{
+    padding: 88px 0px 95px 0px;
+    @include media-breakpoint-down(sm) {
+        padding: 64px 0px 0px 0px;  
+    }
+    .article{
+        display: flex;
+        justify-content: space-between;
+        gap: 104px;
+        @include media-breakpoint-down(lg) {
+            gap: 48px;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-direction: column-reverse;
+        }
+        &__map{
+            max-width: 833px;
+            flex: 1;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .heading{
+                color: $primary-color-1;
+                font-family: $primary-font-regular;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: -0.01em;
+                text-align: left;
+            }
+
+            .sub-heading{
+                font-family: $primary-font-regular;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.001em;
+                text-align: left;
+            }
+
+            .link{
+                color: $primary-color-1;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .smw-icon-linkedln-blue, .smw-icon-twitter{
+                &::before{
+                    font-size: 20px;
+                    color: $secondary-color-1;
+                }
+            }            
+        }
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
