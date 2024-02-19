@@ -30,6 +30,18 @@
         background-color: $primary-color-2;
     }
 
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: $white-color-1; 
+        .smw-icon-dot{
+            &::before{
+                font-size: 12px;
+            }
+        }
+    }
+
     &__title {
         @include media-breakpoint-down(md) {
             font-size: 32px;

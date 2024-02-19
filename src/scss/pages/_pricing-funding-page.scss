@@ -1,17 +1,20 @@
 .pricingPage {
     .testimonialSection {
+        .article{
+            max-width: 1004px;
+            &__content {
+                @include media-breakpoint-down(md) {
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.018px;
+                }
+            }
+        }
         &:before {
             background-color: $white-color-2;
         }
 
-        .article__content {
-            @include media-breakpoint-down(md) {
-                text-align: center;
-                font-size: 18px;
-                line-height: 24px;
-                letter-spacing: -0.018px;
-            }
-        }
     }
 
     .ctaSection {
