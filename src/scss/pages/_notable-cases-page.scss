@@ -2,7 +2,7 @@
 *   Notable Cases Page
 **********************************/
 .notable-cases-page{
-    &.featuredCardWrapper{
+    .featuredCardWrapper{
         margin-top: -70px; 
         @include media-breakpoint-down(md) {
             margin-top: -98px;
@@ -15,7 +15,7 @@
             }
         }
     }
-    &.smwFilter{
+    .smwFilter{
         .smw-icon-down-arrow{
             &::before{
                 color: $secondary-color-1;

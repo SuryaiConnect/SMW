@@ -1,3 +1,6 @@
+/*********************************
+*  Pricing and Funding Page
+**********************************/
 .pricingPage {
     .testimonialSection {
         .article{
@@ -11,7 +14,7 @@
                 }
             }
         }
-        &:before {
+        &::before, &::after {
             background-color: $white-color-2;
         }
 

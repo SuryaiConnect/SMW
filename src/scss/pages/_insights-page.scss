@@ -1,9 +1,11 @@
+/*********************************
+*  Insights Page
+**********************************/
 .insights-page {
     .smwFilter {
         @include media-breakpoint-down(md) {
             padding: 56px 0;
         }
-
     }
 
     .contentSections {

@@ -1,8 +1,11 @@
+/*********************************
+*  People Page
+**********************************/
 .peoplepage{
-    &.peopleArticleSection{
+    .peopleArticleSection{
         padding: 145px 0px 88px 0px;
         @include media-breakpoint-down(md) {
-            padding: 96px 0px 48px 0px;
+            padding: 96px 0px 88px 0px;
 
         }
         .peopleArticle{
@@ -32,12 +35,15 @@
                         letter-spacing: -0.01em;
                         text-align: left;
                         margin-bottom: 16px;
+                        @include media-breakpoint-down(md) {
+                            margin-bottom: 0px;
+                        }
                     }
                 }
             }
         }
     }    
-    &.insightSection{
+    .insightSection{
         @include media-breakpoint-down(md) {
             padding: 0px 0px 88px 0px;
         }
@@ -95,7 +101,7 @@
             }    
         }
     }
-    &.notableCasesSection{
+    .notableCasesSection{
         padding: 145px 0px 88px 0px;
         @include media-breakpoint-down(lg) {
             padding: 88px 0px 88px 0px;
@@ -108,11 +114,14 @@
             }
         }
     }
-    &.accrediationSection{
+    .accrediationSection{
         .accrediationWrapper{
             padding: 145px 0px 88px 0px;
             @include media-breakpoint-down(lg) {
                 padding: 88px 0px 88px 0px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 72px 0px 72px 0px;
             }
        }
     }

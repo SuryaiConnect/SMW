@@ -7,7 +7,14 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    position: relative;    
+    position: relative; 
+    @include media-breakpoint-down(md) {
+        height: 262px;
+    }   
+    @include media-breakpoint-down(sm) {
+        height: 179px;
+    }   
+
 }
 
 .rectangle {
@@ -34,7 +41,14 @@
         display: flex;
         align-items: center;
         gap: 16px;
-        color: $white-color-1; 
+        color: $white-color-1;
+        @include media-breakpoint-down(md) {
+            align-items: start;
+            flex-direction: column;
+        } 
+        @include media-breakpoint-down(lg) {
+            font-size: 32px;
+        }
         .smw-icon-dot{
             &::before{
                 font-size: 12px;

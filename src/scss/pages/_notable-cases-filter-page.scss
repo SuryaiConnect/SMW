@@ -1,0 +1,11 @@
+/*********************************
+*   Notable Cases Filter Page
+**********************************/
+.notable-cases-filter-page{
+    .smwFilter{
+        padding: 112px 0px 56px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 76px 0px 56px 0px;
+        }
+    }
+}
