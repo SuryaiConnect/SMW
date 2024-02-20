@@ -39,7 +39,7 @@ $(document).ready(function(){
             // On expertise page
             $($relatedExpertiseSlider).trigger('destroy.owl.carousel').removeClass('owl-loaded');
             $($relatedExpertiseSlider).find('.owl-stage-outer').children().unwrap(); 
-            $($relatedExpertiseSlider).addClass('d-flex flex-column gap-49'); 
+            $($relatedExpertiseSlider).addClass('d-flex flex-column gap-72'); 
         }
     }
 });
