@@ -2,13 +2,13 @@
 *  About Us Page
 **********************************/
 .about-us-page {
-    &.meetourTeam {
+    .meetourTeam {
         @include media-breakpoint-down(md) {
             padding: 0px 0px 88px 0;
         }
     }
 
-    &.card-section {
+    .card-section {
         padding: 88px 0px;
         background-color: $white-color-2;
 
@@ -18,7 +18,7 @@
         }
     }
 
-    &.testimonialSection {
+    .testimonialSection {
         &::before {
             background-color: $white-color-2;
         }

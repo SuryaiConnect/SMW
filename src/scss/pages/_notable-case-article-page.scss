@@ -1,9 +1,8 @@
-
 /*********************************
 *   Notable Case Article Page
 **********************************/
 .notable-case-article-page{
-    &.requestSections  {
+    .requestSections  {
         &.white-3-curve-bottom{
             @include media-breakpoint-down(md) {
                 &::after{
@@ -12,7 +11,7 @@
             }
         }
     }
-    &.relatedCases{
+    .relatedCases{
         &.smw-mt-curve-fixes{
                     @include media-breakpoint-down(md) {
                     margin-top: 0px;

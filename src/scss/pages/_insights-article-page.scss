@@ -1,0 +1,78 @@
+/*********************************
+*  Insights Article Page
+**********************************/
+.insights-article-page {
+    .smw-breadcrumb {
+        background-color: $white-color-2;
+    }
+    .insightArticleSection {
+        padding: 34.6px 0px 88px 0px;
+
+        @include media-breakpoint-down(md) {
+            padding: 48px 0 78px 0px;
+        }
+
+        .insightArticle {
+            display: flex;
+            gap: 72px;
+            justify-content: space-between;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+
+        .RTE-Section {
+            max-width: 729px;
+            padding: 0 0 49px;
+
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
+
+            p {
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.016px;
+            }
+        }
+
+        .insights-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            &__title {
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: -0.22px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: -0.18px;
+                }
+            }
+
+            &__author {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+                letter-spacing: -0.3px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 26px;
+                    line-height: 30px;
+                    letter-spacing: -0.26px;
+                }
+            }
+        }
+    }
+}

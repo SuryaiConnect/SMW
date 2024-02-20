@@ -1,10 +1,11 @@
 /*********************************
 * All Curve Classes 
 **********************************/
-.substract-bottom-white-curve{
+.substract-bottom-white-curve {
     /* Homepage masthead bottom white curve */
     position: relative;
-    &:after{
+
+    &:after {
         position: absolute;
         content: '';
         width: 100%;
@@ -13,7 +14,8 @@
         z-index: 2;
         background: url('./../images/substract-white.svg') center 100% no-repeat;
         bottom: -13px;
-        background-size: cover; 
+        background-size: cover;
+
         @include media-breakpoint-down(lg) {
             height: 55px;
             background-size: 101%;
@@ -41,8 +43,27 @@
     }
 }
 
-.primary-curve-top{
+.substract-bottom-white-2-curve {
+    &:before {
+        content: '';
+        position: absolute;
+        height: 57px;
+        width: 100%;
+        left: 0px;
+        bottom: -2px;
+        background: url('./../images/substract-white-2.svg') center 100% no-repeat;
+        background-size: 100%;
+
+        @include media-breakpoint-up(xxl) {
+            background-size: cover;
+            height: 80px;
+        }
+    }
+}
+
+.primary-curve-top {
     position: relative;
+
     &:before {
         content: '';
         position: absolute;
@@ -61,10 +82,11 @@
     }
 }
 
-.primary-curve-bottom{
+.primary-curve-bottom {
     position: relative;
-    &:after{
-        content:'';
+
+    &:after {
+        content: '';
         position: absolute;
         height: 57px;
         width: 100%;
@@ -73,6 +95,7 @@
         background: url('./../images/curve-primary-bottom.svg') center 0% no-repeat;
         background-size: 100%;
         z-index: 1;
+
         @include media-breakpoint-up(xxl) {
             background-size: cover;
             height: 80px;
@@ -81,8 +104,9 @@
     }
 }
 
-.secondary-curve-top{
+.secondary-curve-top {
     position: relative;
+
     &:before {
         content: '';
         position: absolute;
@@ -101,8 +125,9 @@
     }
 }
 
-.secondary-curve-bottom{
+.secondary-curve-bottom {
     position: relative;
+
     &:after {
         content: '';
         position: absolute;
@@ -122,10 +147,11 @@
     }
 }
 
-.white-3-curve-top{
+.white-3-curve-top {
     position: relative;
-    &:before{
-        content:'';
+
+    &:before {
+        content: '';
         position: absolute;
         height: 57px;
         width: 100%;
@@ -133,6 +159,7 @@
         top: -56px;
         background: url('./../images/curve-top-light.svg') center 100% no-repeat;
         background-size: 100%;
+
         @include media-breakpoint-up(xxl) {
             background-size: cover;
             height: 80px;
@@ -140,10 +167,11 @@
     }
 }
 
-.white-3-curve-bottom{
+.white-3-curve-bottom {
     position: relative;
-    &:after{
-        content:'';
+
+    &:after {
+        content: '';
         position: absolute;
         height: 57px;
         width: 100%;
@@ -151,6 +179,7 @@
         bottom: -56px;
         background: url('./../images/curve-bottom-light.svg') center 0% no-repeat;
         background-size: 100%;
+
         @include media-breakpoint-up(xxl) {
             background-size: cover;
             height: 80px;
@@ -187,4 +216,3 @@
         }
     }
 }
-

@@ -58,24 +58,30 @@
 @import 'sections/notablearticleSection';
 @import 'sections/accordian';
 @import 'sections/relatedExpertiseSection';
+@import 'sections/richTextSection';
 @import 'sections/accrediationSection';
 @import 'sections/peopleArticleSection';
 @import 'sections/contactUsSection';
 @import 'sections/frameSection';
+@import 'sections/cardGrid';
 
 
 // Pages
 @import 'pages/homepage';
 @import 'pages/about-us-page';
 @import 'pages/notable-cases-page';
+@import 'pages/notable-cases-filter-page';
 @import 'pages/notable-case-article-page';
 @import 'pages/careers-page';
 @import 'pages/pricing-funding-page';
 @import 'pages/expertise-page';
-@import 'pages/paralegal-team';
-@import 'pages/our-people';
-@import 'pages/people-page'; 
+@import 'pages/paralegal-team-page';
+@import 'pages/our-people-page';
+@import 'pages/terms-and-condition-page';
+@import 'pages/insights-page';
+@import 'pages/insights-article-page';
 @import 'pages/404-page';
+@import 'pages/people-page';
+@import 'pages/terms-and-condition-page'; 
 @import 'pages/contact-us-page';
 @import 'pages/search-results';
-

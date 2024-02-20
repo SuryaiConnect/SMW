@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SMW Insights</title>
+    <link rel="icon" type="image/x-icon" href="../dist/images/favicon.png">
+    <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link type="text/css" href="../dist/vendors/owlcarousel/dist/assets/owl.theme.default.css" rel="stylesheet">
+    <link type="text/css" href="../dist/css/styles.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="smwHead">
+            <div class="mainNavContainer">
+                <header class="m-header d-flex d-lg-none">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                        <a href="index.html">
+                            <img src="./images/smw-logo.svg" alt="SMW Logo" width="117" height="95">
+                        </a>
+                        <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
+                            <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
+                                        class="smw-icon-search"></span></a></li>
+                            <li class="m-burger" id="m-burger"><a href="javascript:;" class="text-decoration-none">
+                                    <span class="smw-icon-burger"></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </header>
+                <header class="header smw-py-32 smart-animation">
+                    <div class="header__left d-flex justify-content-between align-self-stretch">
+                        <a href="index.html" class="header__logo">
+                            <img src="./images/smw-logo.png" alt="SMW Logo" width="117" height="95">
+                        </a>
+                        <ul class="d-flex d-lg-none align-items-center gap-16 list-group list-group-horizontal">
+                            <li class="m-search"><a href="javascript:;" class="text-decoration-none"><span
+                                        class="smw-icon-search"></span></a></li>
+                            <li class="m-close">
+                                <a href="javascript:;" class="text-decoration-none d-block d-lg-none"
+                                    id="close-mainNav">
+                                    <span class="smw-icon-sub-close"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <div class="smwDetails">
+                            <div class="smwContactDetails">
+                                <p class="p__small text-white fw-bold">24/7 Arrest Support</p>
+                                <p class="d-flex gap-8 align-items-center"><span class="smw-icon-phone"></span><span
+                                        class="text-white">020 7481 9157</span></p>
+                                <p class="d-flex gap-8 align-items-center"><span class="smw-icon-email"></span><a
+                                        class="smw-link smart-animation"
+                                        href="mailto:enquiries@criminalsolicitor.co.uk">enquiries@criminalsolicitor.co.uk</a>
+                                </p>
+                            </div>
+                            <p class="button__translate d-flex align-items-center">
+                                <span class="smw-icon-translate"></span><span
+                                    class="button__translate-txt">Translate</span><span
+                                    class="smw-icon-right-arrow smart-animation"></span>
+                            </p>
+                        </div>
+                        <nav class="mainNav">
+                            <ul class="list-group list-group-horizontal-lg">
+                                <li class="mainNav__item">
+                                    <a href="javascript:;" class="mainNav__item-link"><span class="p__small">About
+                                            Us</span><span class="smart-animation smw-icon-right-angle"></span></a>
+                                </li>
+                                <li class="mainNav__item"><a href="javascript:;" class="mainNav__item-link"><span
+                                            class="p__small">Expertise</span><span
+                                            class="smart-animation smw-icon-right-angle"></span></a></li>
+                                <li class="mainNav__item"><a href="javascript:;" class="mainNav__item-link"><span
+                                            class="p__small">Our People</span></a></li>
+                                <li class="mainNav__item"><a href="notable-cases.html" class="mainNav__item-link"><span
+                                            class="p__small">Notable Cases</span></a></li>
+                                <li class="mainNav__item"><a href="javascript:;" class="mainNav__item-link"><span
+                                            class="p__small">Insights</span></a></li>
+                                <li class="mainNav__item"><a href="javascript:;" class="mainNav__item-link"><span
+                                            class="p__small">Contact</span></a></li>
+                                <li class="mainNav__item d-none d-lg-block"><a href="javascript:;"
+                                        class="mainNav__item-link"><span class="smw-icon-search"></span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <div class="container-fluid container-xl smw-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <section class="headerWrapper smart-animation" id="about-us">
+                            <div class="header__top">
+                                <div class="container-fluid container-xl">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-block d-lg-none">
+                                            <div
+                                                class="header__sub-header d-flex justify-content-between align-self-stretch">
+                                                <a href="index.html">
+                                                    <img src="./images/smw-logo.png" alt="SMW Logo">
+                                                </a>
+                                                <ul
+                                                    class="d-flex align-items-center gap-16 list-group list-group-horizontal">
+                                                    <li class="m-search"><a href="javascript:;"
+                                                            class="text-decoration-none"><span
+                                                                class="smw-icon-search"></span></a></li>
+                                                    <li class="m-close">
+                                                        <a href="javascript:;"
+                                                            class="text-decoration-none close-subNav">
+                                                            <span class=" smw-icon-sub-close"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 d-block d-lg-none">
+                                            <a href="javascript:;"
+                                                class="submenu-back smw-pb-16 d-flex gap-8 align-self-end text-decoration-none align-items-center justify-content-end"><span
+                                                    class="smw-icon-button-left"></span><span
+                                                    class="p__small text-white">Back</span></a>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <ul class="mainNav__subMenu mw-396 mx-auto text-lg-center">
+                                                <li class="mainNav__subMenu-item"><a href="about-us.html"
+                                                        class="mainNav__subMenu-link"><span class="p__small">About
+                                                            SMW</span></a></li>
+                                                <li class="mainNav__subMenu-item"><a href="careers.html"
+                                                        class="mainNav__subMenu-link"><span
+                                                            class="p__small">Careers</span></a></li>
+                                                <li class="mainNav__subMenu-item"><a href="pricing-and-funding.html"
+                                                        class="mainNav__subMenu-link"><span class="p__small">Pricing and
+                                                            Funding</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__bottom">
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-sm-12 d-none d-lg-flex align-items-center justify-content-between">
+                                            <div class="header__bottom-left d-flex flex-column gap-8">
+                                                <h2 class="text-white">24/7 Arrest Support</h2>
+                                                <p class="p__small text-white">If you, or someone you know, have been
+                                                    arrested, give us a call straight away. Although based in London,
+                                                    we’ll
+                                                    get to you wherever you are.</p>
+                                            </div>
+                                            <div class="header__bottom-right">
+                                                <h2 class="text-white">020 7481 9157</h2>
+                                            </div>
+                                        </div>
+                                        <div class="d-block d-lg-none col-sm-12">
+                                            <div class="smwDetails">
+                                                <div class="smwContactDetails">
+                                                    <p class="p__small text-white fw-bold">24/7 Arrest Support</p>
+                                                    <p class="d-flex gap-8 align-items-center"><span
+                                                            class="smw-icon-phone"></span><span class="text-white">020
+                                                            7481
+                                                            9157</span></p>
+                                                    <p class="d-flex gap-8 align-items-center"><span
+                                                            class="smw-icon-email"></span><a
+                                                            class="smw-link smart-animation"
+                                                            href="mailto:enquiries@criminalsolicitor.co.uk">enquiries@criminalsolicitor.co.uk</a>
+                                                    </p>
+                                                </div>
+                                                <p class="button__translate d-flex align-items-center">
+                                                    <span class="smw-icon-translate"></span><span
+                                                        class="button__translate-txt">Translate</span><span
+                                                        class="smw-icon-right-arrow smart-animation"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="headerWrapper smart-animation" id="expertise">
+                            <div class="header__top">
+                                <div class="container-fluid container-xl">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-block d-lg-none">
+                                            <div
+                                                class="header__sub-header d-flex justify-content-between align-self-stretch">
+                                                <a href="index.html">
+                                                    <img src="./images/smw-logo.png" alt="SMW Logo">
+                                                </a>
+                                                <ul
+                                                    class="d-flex align-items-center gap-16 list-group list-group-horizontal">
+                                                    <li class="m-search"><a href="javascript:;"
+                                                            class="text-decoration-none"><span
+                                                                class="smw-icon-search"></span></a></li>
+                                                    <li class="m-close">
+                                                        <a href="javascript:;"
+                                                            class="text-decoration-none close-subNav">
+                                                            <span class=" smw-icon-sub-close"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 d-block d-lg-none">
+                                            <a href="javascript:;"
+                                                class="submenu-back smw-pb-16 d-flex d-lg-none gap-8 align-self-end text-decoration-none align-items-center justify-content-end"><span
+                                                    class="smw-icon-button-left"></span><span
+                                                    class="p__small text-white">Back</span></a>
+                                        </div>
+                                        <div class="m-height">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-4">
+                                                    <ul class="mainNav__subMenu mw-386-6">
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">Assault</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">benefit
+                                                                    fraud</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">bribery
+                                                                    and corruption</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">cash
+                                                                    seizure</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">confiscation proceedings</span></a>
+                                                        </li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">driving
+                                                                    offences</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12 col-lg-4">
+                                                    <ul class="mainNav__subMenu mw-386-6">
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">drugs
+                                                                    offence</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">extradition</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">football banning orders</span></a>
+                                                        </li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">fraud
+                                                                    and theft</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">money
+                                                                    laundering</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">murder
+                                                                    and manslaughter</span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12 col-lg-4">
+                                                    <ul class="mainNav__subMenu mw-386-6">
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">public
+                                                                    order and protest offences</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">serious
+                                                                    crime</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">sexual
+                                                                    offences</span></a></li>
+                                                        <li class="mainNav__subMenu-item"><a href="javascript:;"
+                                                                class="mainNav__subMenu-link"><span
+                                                                    class="p__small">terrorism offences</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__bottom">
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-sm-12 d-none d-lg-flex align-items-center justify-content-between">
+                                            <div class="header__bottom-left d-flex flex-column gap-8">
+                                                <h2 class="text-white">24/7 Arrest Support</h2>
+                                                <p class="p__small text-white">If you, or someone you know, have been
+                                                    arrested, give us a call straight away. Although based in London,
+                                                    we’ll
+                                                    get to you wherever you are.</p>
+                                            </div>
+                                            <div class="header__bottom-right">
+                                                <h2 class="text-white">020 7481 9157</h2>
+                                            </div>
+                                        </div>
+                                        <div class="d-block d-lg-none col-sm-12">
+                                            <div class="smwDetails">
+                                                <div class="smwContactDetails">
+                                                    <p class="p__small text-white fw-bold">24/7 Arrest Support</p>
+                                                    <p class="d-flex gap-8 align-items-center"><span
+                                                            class="smw-icon-phone"></span><span class="text-white">020
+                                                            7481
+                                                            9157</span></p>
+                                                    <p class="d-flex gap-8 align-items-center"><span
+                                                            class="smw-icon-email"></span><a
+                                                            class="smw-link smart-animation"
+                                                            href="mailto:enquiries@criminalsolicitor.co.uk">enquiries@criminalsolicitor.co.uk</a>
+                                                    </p>
+                                                </div>
+                                                <p class="button__translate d-flex align-items-center">
+                                                    <span class="smw-icon-translate"></span><span
+                                                        class="button__translate-txt">Translate</span><span
+                                                        class="smw-icon-right-arrow smart-animation"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Main Navigation -->
+        <main class="insights-page">
+            <div class="primary-bg-color-2 breadcrumb-curve">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="smw-breadcrumb primary" aria-label="breadcrumb">
+                                <ol class="d-flex gap-8 align-items-center">
+                                    <li class="smw-breadcrumb-item">
+                                        <a href="index.html" class="smw-breadcrumb-link"><span
+                                                class="smw-icon-home"></span></a>
+                                    </li>
+                                    <li class="smw-breadcrumb-item">
+                                        <a href="insights.html" class="smw-breadcrumb-link"><span
+                                                class="smw-icon-dot"></span><span
+                                                class="smw-breadcrumb-text">Insights</span></a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Breadcrumb-->
+            <div class="container-fluid container-lg smw-container ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contentSections banner-content">
+                            <article class="article">
+                                <!-- <div class="article__content"> -->
+                                <h1 class="article__title">Insights</h1>
+                                <p class="article__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum a nibh
+                                    eget tincidunt. Etiam dignissim, dui sed bibendum facilisis, augue turpis
+                                    elementum velit.
+                                </p>
+                                <!-- </div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smwFilter notable-cases-page">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12 dropdownContainer">
+                            <div class="dropdownWrapper">
+                                <p class="smw-btn-text smw-mb-8">Filter by expertise</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle smwdropdown d-flex align-items-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="smwdropdown__text">Show all </span>
+                                        <i class="smw-icon-down-arrow"></i>
+                                    </button>
+                                    <ul class="dropdown-menu smwdropdown__options">
+                                        <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Assault (select to filter)</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Expertise</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdownWrapper">
+                                <p class="smw-btn-text smw-mb-8">Filter by author</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle smwdropdown d-flex align-items-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="smwdropdown__text">Show all </span>
+                                        <i class="smw-icon-down-arrow"></i>
+                                    </button>
+                                    <ul class="dropdown-menu smwdropdown__options">
+                                        <li><a class="dropdown-item" href="javascript:;">Show all</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                        <li><a class="dropdown-item" href="javascript:;">Author name</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Filter -->
+            <div class="caseCardSection">
+                <div class="container-fluid container-lg smw-container">
+                    <div
+                        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-0 smw-row justify-content-between">
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="insightCard">
+                                <div class="insightCard__head">
+                                    <img src="./images/insight-card-image.png" alt="image"
+                                        class="insightCard__img img-fluid">
+                                </div>
+                                <div class="insightCard__body with-author">
+                                    <p class="p__xsmall d-flex gap-4 align-items-center">
+                                        <img src="./images/author-img.png" alt="author-name" width="38" height="38">
+                                        <span class="">Author name</span>
+                                    </p>
+                                    <a href="javascript:;" class="insight__link">
+                                        <h2 class="insightCard__body-title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit pellentesque?</h2>
+                                        <p class="link__insight smart-animation"><span class="smw-btn-text">Go to
+                                                this
+                                                insight</span><span class="smw-icon-right-arrow"></span></p>
+                                    </a>
+                                    <div>
+                                        <p class="p__xsmall smw-mb-8">paragraph text extra small</p>
+                                        <p class="d-flex gap-8">
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                            <button class="button__insight smart-animation"><span
+                                                    class="smw-btn-text">Expertise</span></button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- card Card -->
+            <div class="container-fluid container-lg smw-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="smw-pagination d-flex justify-content-between">
+                            <div class="smw-pagination__left">
+                                <button class="smw-pagination-btn">
+                                    <span class="smw-icon-button-left"></span>
+                                </button>
+                                <span class="p__xsmall d-none d-md-block">Previous</span>
+                            </div>
+                            <div class="smw-pagination__middle d-flex gap-8 align-items-center justify-content-center">
+                                <span class="smw-btn-text active">1</span>
+                                <span class="smw-btn-text">2</span>
+                                <span class="smw-btn-text">3</span>
+                            </div>
+                            <div class="smw-pagination__right">
+                                <span class="p__xsmall d-none d-md-block">Next</span>
+                                <button class="smw-pagination-btn">
+                                    <span class="smw-icon-button-right"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Pagination Section -->
+        </main>
+        <footer class="smwFooter">
+            <div class="smwFooter__top">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row align-items-center gap-dmd-32">
+                        <div class="col-sm-12 col-md-10">
+                            <div class="smwContactDetails">
+                                <p class="text-white fw-bold">24/7 Arrest Support</p>
+                                <p class="d-flex gap-8 align-items-center"><span class="smw-icon-phone"></span><span
+                                        class="text-white">020 7481 9157</span></p>
+                                <p class="p__small d-flex gap-8 align-items-center"><span
+                                        class="smw-icon-email"></span><a class="smw-link smart-animation"
+                                        href="mailto:enquiries@criminalsolicitor.co.uk">enquiries@criminalsolicitor.co.uk</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-2">
+                            <ul class="d-flex gap-16 justify-content-center justify-content-md-end">
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none">
+                                        <span class="smw-icon-linkedln"></span>
+
+                                    </a>
+                                </li>
+                                <li><a href="javascript:;" class="text-decoration-none"><span
+                                            class="smw-icon-twitter"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smwFooter__midle">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="footer mx-auto">
+                                <div class="footer__left">
+                                    <div class="footer__left-left">
+                                        <div class="footer__left-top">
+                                            <img class="smwFooter__midle-icon" src="../dist/images/smw-logo.svg"
+                                                alt="SMW Logo">
+                                            <p class="p__small text-white">Sonn Macmillan Walker is one of the largest
+                                                firms
+                                                of
+                                                specialist
+                                                criminal defence
+                                                solicitors.
+                                            </p>
+                                        </div>
+                                        <div class="d-flex gap-31 justify-content-center justify-content-md-start">
+                                            <img src="../dist/images/legal-500.svg" alt="">
+                                            <img src="../dist/images/chambers-logo.svg" alt="chambers-logo">
+
+                                        </div>
+                                    </div>
+                                    <div class="footer__left-right">
+                                        <div class="footer__left-right-quik-links">
+                                            <label class="footer__left-right-lable">Quick Links</label>
+                                            <ul class="d-flex gap-8 flex-column">
+                                                <li><a class="footer__left-right-links" href="javascript:;">Our
+                                                        People</a></li>
+                                                <li><a class="footer__left-right-links" href="javascript:;">Insights</a>
+                                                </li>
+                                                <li><a class="footer__left-right-links" href="careers.html">Careers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer__left-right-more-pages">
+                                            <label class="footer__left-right-lable">More pages</label>
+                                            <ul class="d-flex gap-8 flex-column" id="Mor">
+                                                <li><a class="footer__left-right-links" href="javascript:;">Terms and
+                                                        conditions</a></li>
+                                                <li><a class="footer__left-right-links" href="javascript:;">Policy
+                                                        pages</a></li>
+                                                <li><a class="footer__left-right-links" href="javascript:;">Terms and
+                                                        conditions</a></li>
+                                                <li><a class="footer__left-right-links"
+                                                        href="javascript:;">Complaints</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__right">
+                                    <div>
+                                        <img src="../dist/images/solitary-regulation-authority.png"
+                                            alt="solitary-regulation-authority">
+                                    </div>
+                                    <p class="footer__right-content">
+                                        Sonn Macmillan Walker is a trading name of Sonn Macmillan Walker Ltd, a company
+                                        registered in England and Wales no. 7879842.
+                                        <br>
+                                        <br>
+                                        Regulated by the <a class="footer__right-link" href="">Solicitors Regulation
+                                            Authority</a> as Sonn Macmillan
+                                        Walker Ltd no.
+                                        566039
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smwFooter__bottom">
+                <div class="container-fluid container-lg smw-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="gap-2 text-white"><span>Website by </span><span><a
+                                        class="text-white text-decoration-none" href="javascript:;">Kayo
+                                        Digital</a></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- footer section -->
+    </div> <!-- Wrapper -->
+    <div class="popup smart-animation" id="popup">
+        <div class="container smw-container">
+            <div class="row">
+                <div class="col-sm-12 align-self-end">
+                    <p
+                        class="mb-4 d-flex gap-8 align-items-center justify-content-center justify-content-md-end popup__close">
+                        <span class="text-white">Close </span><span class="smw-icon-close"></span>
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="smw-searchbar">
+                        <div class="d-md-flex">
+                            <input type="text" class="smw-searchbar-field form-control" placeholder="Enter Search"
+                                aria-label="Enter Search">
+                            <button
+                                class="button__blue justify-content-center d-flex gap-8 align-items-center"><span>Search</span><span
+                                    class="smw-icon-right-arrow"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Search Popup -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../dist/vendors/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/vendors/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="../dist/js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -12,29 +12,90 @@
 */
 
 @mixin dynamic-gap($gap) {
-    gap: $gap;
-    &.row-cols-xl-3 > * {
-      @include media-breakpoint-up(xl) {
-        width: calc(33.33% - #{$gap});
-      }
-    }
+  gap: $gap;
 
-    &.row-cols-lg-3 > * {
-      @include media-breakpoint-down(xl) {
-        width: calc(33.33% - #{$gap});
-      }
+  &.row-cols-xl-4>* {
+    @include media-breakpoint-up(xl) {
+      width: calc(25% - #{$gap});
     }
-
-    &.row-cols-md-2 > * {
-      @include media-breakpoint-down(lg) {
-        width: calc(50% - #{$gap});
-      }
-    }
-    
-    &.row-cols-1 > * {
-      @include media-breakpoint-down(md) {
-        width: calc(100%);
-      }
-    }    
   }
-  
+
+  &.row-cols-xl-3>* {
+    @include media-breakpoint-up(xl) {
+      width: calc(33.33% - #{$gap});
+    }
+  }
+
+  &.row-cols-lg-3>* {
+    @include media-breakpoint-down(xl) {
+      width: calc(33.33% - #{$gap});
+    }
+  }
+
+  &.row-cols-lg-4>* {
+    @include media-breakpoint-down(xl) {
+      width: calc(24% - #{$gap});
+    }
+  }
+
+  &.row-cols-md-2>* {
+    @include media-breakpoint-down(lg) {
+      width: calc(50% - #{$gap});
+    }
+  }
+
+  &.row-cols-1>* {
+    @include media-breakpoint-down(md) {
+      width: calc(100%);
+    }
+  }
+}
+
+@mixin dynamic-gap-xy($x, $y) {
+  $gap-x: $x;
+  $gap-y: $y;
+
+  gap: $gap-x $gap-y;
+
+  &.row-cols-xl-4>* {
+    @include media-breakpoint-up(xl) {
+      width: calc(25% - 24px);
+    }
+  }
+
+  // &.row-cols-xl-3>* {
+  //   @include media-breakpoint-up(xl) {
+  //     width: calc(33.33% - #{$gap-y});
+  //   }
+  // }
+
+  &.row-cols-lg-3>* {
+    @include media-breakpoint-down(xl) {
+      width: calc(33.33% - 22px);
+    }
+  }
+
+  // &.row-cols-lg-4>* {
+  //   @include media-breakpoint-down(xl) {
+  //     width: calc(24% - #{$gap-y});
+  //   }
+  // }
+
+  &.row-cols-md-2>* {
+    @include media-breakpoint-down(lg) {
+      width: calc(50% - 22px);
+    }
+  }
+
+  &.row-cols-sm-2>* {
+    @include media-breakpoint-down(md) {
+      width: calc(50% - 16px);
+    }
+  }
+
+  &.row-cols-1>* {
+    @include media-breakpoint-down(sm) {
+      width: calc(100%);
+    }
+  }
+}

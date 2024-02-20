@@ -1,0 +1,75 @@
+/*********************************
+*  Insights Page
+**********************************/
+.insights-page {
+    .smwFilter {
+        @include media-breakpoint-down(md) {
+            padding: 56px 0;
+        }
+    }
+
+    .contentSections {
+        padding: 135px 0 0px 0px;
+        @include media-breakpoint-down(md) {
+            padding: 88px 0px 0px 0px;
+        }
+
+        .smw-icon-dot {
+            font-size: 12px;
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__title{
+                display: flex;
+                align-items: center; 
+                gap: 24px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 32px;
+                }
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                    align-items: start; 
+                }
+            }
+
+            &__content {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+                letter-spacing: -0.016px;
+            }
+        }
+    }
+
+    .caseCardSection {
+        // padding-bottom: 88px;
+
+        // @include media-breakpoint-down(sm) {
+        //     padding: 88px 0;
+        // }
+
+        .smw-row {
+            @include dynamic-gap-xy(48px, 32px);
+
+            @include media-breakpoint-down(sm) {
+                @include dynamic-gap-xy(32px, 32px);
+            }
+        }
+
+        .insightCard {
+            .insightCard {
+                &__body {
+                    &-title {
+                        font-family: $primary-font-regular;
+                    }
+                }
+            }
+        }
+    }
+}
