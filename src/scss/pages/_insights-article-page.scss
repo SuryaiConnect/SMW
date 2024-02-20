@@ -5,6 +5,17 @@
     .smw-breadcrumb {
         background-color: $white-color-2;
     }
+    
+    .caseCardSection {
+        .insightCard {
+            background-color: $white-color-1;
+            &__body {
+                &-title {
+                    font-family: $primary-font-regular;
+                }
+            }
+        }
+    }
     .insightArticleSection {
         padding: 34.6px 0px 88px 0px;
 
