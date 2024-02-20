@@ -39,7 +39,19 @@
         @include media-breakpoint-down(sm) {
             padding: 88px 0;
         }
-
+        .peopleCard {
+            .link__people{
+                font-size: 14px;
+                &-text{
+                    color: $secondary-color-1;
+                }
+                [class^="smw-icon-"]{
+                    &::before{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
         .smw-row {
             @include dynamic-gap-xy(48px, 32px);
 

@@ -48,11 +48,6 @@
     }
 
     .caseCardSection {
-        // padding-bottom: 88px;
-
-        // @include media-breakpoint-down(sm) {
-        //     padding: 88px 0;
-        // }
 
         .smw-row {
             @include dynamic-gap-xy(48px, 32px);
@@ -63,11 +58,10 @@
         }
 
         .insightCard {
-            .insightCard {
-                &__body {
-                    &-title {
-                        font-family: $primary-font-regular;
-                    }
+            background-color: $white-color-1;
+            &__body {
+                &-title {
+                    font-family: $primary-font-regular;
                 }
             }
         }

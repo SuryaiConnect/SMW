@@ -11,6 +11,7 @@
         @include media-breakpoint-down(md) { 
             background:  url('./../images/insight-bottom-left-bg.svg') -10% 100% no-repeat,  url('./../images/insight-top-right-bg.svg') 100% -100% no-repeat;
         }
+        background-color: $white-color-2; 
         .article__title {
             font-size: 22px;
             line-height: 26px;
