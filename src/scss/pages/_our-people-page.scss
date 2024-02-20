@@ -16,6 +16,16 @@
             }
         }
     }
+    .cardGridWrapper{
+        .cardGrid{    
+            .blank{
+                background-color: $white-color-2;
+                &::before, &::after{
+                    background-color: $white-color-2; 
+                }
+            } 
+        }
+    }
 
     .testimonialSection {
         margin-top: 56px; 
