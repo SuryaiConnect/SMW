@@ -8,6 +8,14 @@
                 display: none;
             }
         }
+
+        .button__blue {
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto;
+                width: calc(100% - 64px);
+                justify-content: center;
+            }
+        }
     }
     .meetourTeam{
         .button__blue {
@@ -76,6 +84,9 @@
                     font-weight: 600;
                     line-height: 44px; /* 110% */
                     letter-spacing: -0.4px;
+                    @include media-breakpoint-down(sm) {
+                        font-size: 32px;
+                    }
                 }
             }
         }
