@@ -3,32 +3,39 @@
 **********************************/
 .ourPeople-page {
     .contentSections {
-        padding: 135px 0 88px 0px;
+        padding: 135px 0 88px;
+
         @include media-breakpoint-down(md) {
-            padding: 88px 0px 88px 0px;
+            padding: 88px 0px 0px;
         }
-        .article{
-            &__title{
+
+        .article {
+            &__title {
                 margin-bottom: 32px;
             }
-            &__content{
+
+            &__content {
                 font-size: 16px;
             }
         }
     }
-    .cardGridWrapper{
-        .cardGrid{    
-            .blank{
+
+    .cardGridWrapper {
+        .cardGrid {
+            .blank {
                 background-color: $white-color-2;
-                &::before, &::after{
-                    background-color: $white-color-2; 
+
+                &::before,
+                &::after {
+                    background-color: $white-color-2;
                 }
-            } 
+            }
         }
     }
 
     .testimonialSection {
-        margin-top: 56px; 
+        margin-top: 56px;
+
         &::before {
             background-color: $white-color-3;
         }
@@ -36,22 +43,27 @@
 
     .caseCardSection {
         padding-bottom: 88px;
+
         @include media-breakpoint-down(sm) {
             padding: 88px 0;
         }
+
         .peopleCard {
-            .link__people{
+            .link__people {
                 font-size: 14px;
-                &-text{
+
+                &-text {
                     color: $secondary-color-1;
                 }
-                [class^="smw-icon-"]{
-                    &::before{
+
+                [class^="smw-icon-"] {
+                    &::before {
                         font-size: 18px;
                     }
                 }
             }
         }
+
         .smw-row {
             @include dynamic-gap-xy(48px, 32px);
 
@@ -60,16 +72,20 @@
             }
         }
     }
-    .cardFeatured{
-        .card-section{
+
+    .cardFeatured {
+        .card-section {
             padding: 88px 0px 145px 0px;
+
             @include media-breakpoint-down(md) {
                 padding: 88px 0px 88px 0px;
             }
         }
     }
-    .requestSections{
+
+    .requestSections {
         padding: 145px 0px 88px 0px;
+
         @include media-breakpoint-down(md) {
             padding: 88px 0px 88px 0px;
         }
