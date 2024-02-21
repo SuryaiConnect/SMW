@@ -16,35 +16,10 @@
     }
 
     .article {
-
         &__content {
             display: flex;
             flex-direction: column;
             gap: 32px;
         }
-
-        // &__list {
-        //     padding-left: 20px;
-
-        //     &-item {
-        //         color: $primary-color-3; 
-        //         font-size: 16px;
-        //         font-style: normal;
-        //         font-weight: 400;
-        //         line-height: 24px;
-        //         letter-spacing: -0.016px;
-        //         position: relative;
-        //         &::before{
-        //             content: '';
-        //             position: absolute;
-        //             top: 10px;
-        //             width: 3px;
-        //             height: 3px;
-        //             left: -15px;
-        //             background-color: $primary-color-1;
-        //             border-radius: 50%;
-        //         }
-        //     }
-        // }
     }
 }
