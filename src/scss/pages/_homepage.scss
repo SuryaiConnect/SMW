@@ -7,6 +7,11 @@
         @include media-breakpoint-down(lg) {
             padding: 88px 0px 88px 0px;
         }
+        .button__blue {
+            display: block;
+            width: 198px;
+            margin: 0 auto;
+        }
     }
     .notableCasesSection{
         padding: 158px 0px 88px 0px;
@@ -77,5 +82,22 @@
                 }
             }
         } 
+    }
+    .cardGridWrapper{
+        .cardGrid{
+            .item-1 {   
+                @include media-breakpoint-down(md) { 
+                    margin-bottom: 64px;
+                }
+                .article{
+                    padding: 88px 0px 0px 0px;
+                    &__content{
+                        @include media-breakpoint-up(md) { 
+                            margin-bottom: 28px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
