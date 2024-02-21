@@ -23,8 +23,10 @@
 
 // Block
 @import 'blocks/buttons';
+@import 'blocks/listBlock';
 @import 'blocks/smwContactDetails';
 @import 'blocks/footer';
+
 
 
 // Components
@@ -42,7 +44,7 @@
 
 // Sections
 @import 'sections/mastheadSection';
-@import 'sections/sections';
+@import 'sections/cardSection';
 @import 'sections/ctaSection';
 @import 'sections/contentSection';
 @import 'sections/arrestHelplineSection';
@@ -82,6 +84,6 @@
 @import 'pages/insights-article-page';
 @import 'pages/404-page';
 @import 'pages/people-page';
-@import 'pages/terms-and-condition-page'; 
+@import 'pages/terms-and-condition-page';
 @import 'pages/contact-us-page';
 @import 'pages/search-results';

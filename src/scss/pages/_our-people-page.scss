@@ -8,10 +8,11 @@
         @include media-breakpoint-down(md) {
             padding: 88px 0px 0px;
         }
-        
+
         .article {
             &__title {
                 margin-bottom: 32px;
+
                 @include media-breakpoint-down(md) {
                     line-height: 37.57px;
                 }
@@ -38,7 +39,7 @@
     .caseCardSection {
         padding-bottom: 88px;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             padding: 88px 0;
         }
 
