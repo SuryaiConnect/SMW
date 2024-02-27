@@ -57,31 +57,32 @@
         .notableCasesSlider .owl-dots {
             margin: 24px 0 0 0;
         }
-    }
-    .smwFilter{
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            padding: 32px 0px 0px 0px;
-        }
-        .dropdownContainer {
-            .dropdownWrapper{
-                width: 249px;
-                @include media-breakpoint-down(sm) {
-                    width: 100%;
-                }
-                .smw-icon-down-arrow{
-                    &::before{
-                        color: $secondary-color-1; 
-                    }
-                }
-                .smwdropdown__options{
-                    width: 300px;
+        .smwFilter{
+            padding: 0px 0px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                padding: 32px 0px 0px 0px;
+            }
+            .dropdownContainer {
+                .dropdownWrapper{
+                    width: 249px;
                     @include media-breakpoint-down(sm) {
                         width: 100%;
                     }
+                    .smw-icon-down-arrow{
+                        &::before{
+                            color: $secondary-color-1; 
+                        }
+                    }
+                    .smwdropdown__options{
+                        width: 300px;
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                        }
+                    }
                 }
-            }
-        } 
+            } 
+        }
     }
     .cardGridWrapper{
         .cardGrid{
