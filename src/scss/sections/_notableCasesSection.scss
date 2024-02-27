@@ -68,12 +68,6 @@
         }
     }
     .notableCasesSlider{
-        @include media-breakpoint-up(lg) {
-            // display: flex;
-            // flex-wrap: wrap;
-            // gap: 21px;
-            // justify-content: space-between;
-        }
         .caseItem{
             text-decoration: none; 
             @include media-breakpoint-up(lg) {
