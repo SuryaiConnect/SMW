@@ -44,5 +44,4 @@ $(document).ready(function(){
             // $($accrediationSlider).addClass('d-flex flex-column gap-49'); 
         }
     }
-
 });
