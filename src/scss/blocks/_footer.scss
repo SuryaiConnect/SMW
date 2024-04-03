@@ -166,13 +166,15 @@
                     justify-content: center;
                 }
 
-                &-content {
-                    color: $white-color-1;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 18px;
-                    letter-spacing: -0.012px;
+                &-content{
+                    p, a{
+                        color: $white-color-1;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: -0.012px;
+                    }
 
                     @include media-breakpoint-down(md) {
                         text-align: center;

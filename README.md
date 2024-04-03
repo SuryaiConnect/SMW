@@ -16,3 +16,8 @@
 3. grunt (You can watch html,scss,js)
 4. grunt image:dynamic (To optimize all images)
 5. grunt image:static (To optimize single image) 
+
+Note: If you got 'grunt' is not recognized as an internal or external command
+then install grunt-cli with following command
+> npm install -g grunt-cli
+
