@@ -2,7 +2,7 @@
 *  Our People Page
 **********************************/
 .ourPeople-page {
-    .contentSections {
+    .banner-content {
         padding: 135px 0 88px;
 
         @include media-breakpoint-down(md) {
@@ -10,9 +10,7 @@
         }
 
         .article {
-            &__title {
-                margin-bottom: 32px;
-
+            &__title { 
                 @include media-breakpoint-down(md) {
                     line-height: 37.57px;
                 }
