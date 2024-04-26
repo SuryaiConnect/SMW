@@ -20,6 +20,32 @@
             display: flex;
             flex-direction: column;
             gap: 32px;
+
+            ul {
+                padding-left: 20px;
+        
+                li {
+                    color: $primary-color-3;
+                    font-family: $primary-font-regular;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.016px;
+                    position: relative;
+        
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        width: 3px;
+                        height: 3px;
+                        left: -15px;
+                        background-color: $primary-color-1;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 }
