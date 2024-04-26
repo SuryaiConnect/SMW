@@ -71,7 +71,7 @@
 
 .banner-content {
     padding: 88px 0;
-    display: flex;
+    display: flex; 
     max-width: 800px;
     @include media-breakpoint-down(md) {
         padding: 48px 0px 88px 0px;
