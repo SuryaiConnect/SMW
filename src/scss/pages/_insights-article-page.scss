@@ -52,8 +52,16 @@
                 line-height: 24px;
                 letter-spacing: -0.016px;
             }
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
 
+        .sidebar{
+            max-width: 381px;
+        }
         .insights-btn {
             display: flex;
             flex-direction: column;
