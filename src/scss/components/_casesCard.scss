@@ -67,7 +67,7 @@
     }
     &.with-white-text{
         .p__xsmall, .smw-icon-calendar::before,
-        .casesCard__title, .p__small{
+        .casesCard__title, .p__small, p{
             color: $white-color-1;
         }
         &:hover{
